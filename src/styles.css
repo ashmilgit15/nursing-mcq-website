@@ -278,6 +278,32 @@ body {
     padding: 20px;
 }
 
+/* Watermark */
+.watermark {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.watermark a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.watermark a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
 /* Timer styles */
 .timer-container {
     display: flex;

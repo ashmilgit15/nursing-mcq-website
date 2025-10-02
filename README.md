@@ -136,6 +136,14 @@ MIT License - Feel free to use for educational purposes.
 
 ---
 
+## 👨‍💻 Developer
+
+**Developed by [@ashmilgit15](https://github.com/ashmilgit15)**
+
+*A passionate developer dedicated to creating educational tools that make a difference in healthcare education.*
+
+---
+
 **Built with ❤️ for nursing students worldwide** 🌍👩‍⚕️👨‍⚕️
 
 

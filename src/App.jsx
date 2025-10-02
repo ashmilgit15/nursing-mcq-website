@@ -688,6 +688,9 @@ export default function App() {
             )}
             <footer className="footer">
                 Enhanced MCQ Practice • Timer & Difficulty Options • Progress Tracking • Bookmarks
+                <div className="watermark">
+                    Developed by <a href="https://github.com/ashmilgit15" target="_blank" rel="noopener noreferrer">@ashmilgit15</a>
+                </div>
             </footer>
         </div>
     )
