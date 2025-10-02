@@ -1,0 +1,6058 @@
+{
+    "Psychiatric Nursing": [
+        {
+            "question": "Which neurotransmitter imbalance is most strongly implicated in schizophrenia?",
+            "options": [
+                "Serotonin",
+                "Dopamine",
+                "GABA",
+                "Acetylcholine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "In cognitive behavioral therapy, the primary focus is on modifying:",
+            "options": [
+                "Early childhood experiences",
+                "Unconscious drives",
+                "Cognitive distortions",
+                "Genetic predispositions"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which antipsychotic has the highest risk of agranulocytosis?",
+            "options": [
+                "Olanzapine",
+                "Risperidone",
+                "Clozapine",
+                "Aripiprazole"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The most evidence-based therapy for PTSD with re-experiencing is:",
+            "options": [
+                "Supportive therapy",
+                "Prolonged exposure",
+                "Psychoanalysis",
+                "Biofeedback"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Lithium toxicity is most likely with:",
+            "options": [
+                "Sodium depletion",
+                "High sodium diet",
+                "Calcium supplements",
+                "Magnesium supplements"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "A key negative symptom of schizophrenia is:",
+            "options": [
+                "Hallucinations",
+                "Delusions",
+                "Avolition",
+                "Flight of ideas"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which antidepressant is most associated with QT prolongation?",
+            "options": [
+                "Sertraline",
+                "Citalopram",
+                "Bupropion",
+                "Duloxetine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The first-line pharmacotherapy for OCD is:",
+            "options": [
+                "Clomipramine",
+                "SSRIs",
+                "Buspirone",
+                "Benzodiazepines"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Akathisia is best treated with:",
+            "options": [
+                "Benztropine",
+                "Propranolol",
+                "Diphenhydramine",
+                "Haloperidol"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which side effect is most specific to clozapine besides agranulocytosis?",
+            "options": [
+                "Tardive dyskinesia",
+                "Sialorrhea",
+                "Akathisia",
+                "Parkinsonism"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A 24-year-old with bipolar disorder presents manic. First-line acute agent:",
+            "options": [
+                "Lithium",
+                "Fluoxetine",
+                "Donepezil",
+                "Disulfiram"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Serotonin syndrome typically presents with:",
+            "options": [
+                "Hypothermia",
+                "Bradyreflexia",
+                "Hyperreflexia",
+                "Miosis"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which therapy targets core beliefs and automatic thoughts?",
+            "options": [
+                "DBT",
+                "CBT",
+                "EMDR",
+                "Motivational interviewing"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which scale is commonly used to assess depression severity?",
+            "options": [
+                "PANSS",
+                "HAM-D",
+                "MOCA",
+                "MMSE"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A classic sign of Wernicke encephalopathy is:",
+            "options": [
+                "Aphasia",
+                "Ataxia",
+                "Hemiparesis",
+                "Anisocoria"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which benzodiazepine is preferred in liver disease?",
+            "options": [
+                "Diazepam",
+                "Chlordiazepoxide",
+                "Lorazepam",
+                "Clonazepam"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Electroconvulsive therapy is especially effective for:",
+            "options": [
+                "Mild anxiety",
+                "Catatonia",
+                "Specific phobia",
+                "ADHD"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which is a core feature of delirium?",
+            "options": [
+                "Gradual onset",
+                "Stable attention",
+                "Fluctuating consciousness",
+                "Preserved sleep-wake cycle"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which medication lowers suicide risk in bipolar disorder?",
+            "options": [
+                "Valproate",
+                "Lithium",
+                "Quetiapine",
+                "Lamotrigine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A 45-year-old on antipsychotics has muscle rigidity, fever, and ↑CK:",
+            "options": [
+                "Serotonin syndrome",
+                "Neuroleptic malignant syndrome",
+                "Malignant hyperthermia",
+                "Catatonia"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which symptom best differentiates panic disorder from GAD?",
+            "options": [
+                "Restlessness",
+                "Excessive worry",
+                "Unexpected surges of intense fear",
+                "Sleep disturbance"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Core component of DBT includes:",
+            "options": [
+                "Exposure only",
+                "Mindfulness and distress tolerance",
+                "Interpersonal therapy",
+                "Biofeedback"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The minimum ANC to continue clozapine is roughly:",
+            "options": [
+                "<500/µL",
+                ">1500/µL",
+                ">100/µL",
+                ">50/µL"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Buspirone primarily acts on:",
+            "options": [
+                "GABA-A",
+                "5-HT1A",
+                "D2",
+                "NMDA"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Bupropion is contraindicated in:",
+            "options": [
+                "Hypertension",
+                "Seizure disorder",
+                "Diabetes",
+                "Hypothyroidism"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A 30-year-old with repetitive handwashing likely has:",
+            "options": [
+                "OCD",
+                "GAD",
+                "Specific phobia",
+                "Somatic symptom disorder"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which antipsychotic has the greatest metabolic risk?",
+            "options": [
+                "Ziprasidone",
+                "Aripiprazole",
+                "Olanzapine",
+                "Haloperidol"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "An SSRI discontinuation syndrome includes:",
+            "options": [
+                "Constipation",
+                "Flu-like symptoms",
+                "Hyperhidrosis only",
+                "Urinary retention"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Core diagnostic window for postpartum depression is within:",
+            "options": [
+                "1 week",
+                "4 weeks",
+                "12 months",
+                "36 months"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Trauma-focused therapy that uses bilateral stimulation is:",
+            "options": [
+                "CBT",
+                "EMDR",
+                "IPT",
+                "DBT"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which is NOT a negative symptom of schizophrenia?",
+            "options": [
+                "Anhedonia",
+                "Alogia",
+                "Hallucinations",
+                "Avolition"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Valproate common adverse effect includes:",
+            "options": [
+                "Nephrotoxicity",
+                "Hepatotoxicity",
+                "Pulmonary fibrosis",
+                "Ototoxicity"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A manic episode requires duration of at least:",
+            "options": [
+                "1 day",
+                "4 days",
+                "1 week",
+                "2 weeks"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which labs must be monitored for lithium?",
+            "options": [
+                "LFTs only",
+                "Renal and thyroid function",
+                "CBC only",
+                "Lipid panel only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "First-line treatment for social anxiety disorder:",
+            "options": [
+                "SSRIs/SNRIs",
+                "Benzodiazepines only",
+                "Antipsychotics",
+                "Beta-lactams"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which antipsychotic is partial D2 agonist?",
+            "options": [
+                "Aripiprazole",
+                "Haloperidol",
+                "Olanzapine",
+                "Clozapine"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Tardive dyskinesia is due to:",
+            "options": [
+                "Acute D2 blockade",
+                "Upregulation of D2 receptors",
+                "Serotonin excess",
+                "GABA deficiency"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Key nursing priority in acute agitation:",
+            "options": [
+                "Restraints first",
+                "De-escalation and safety",
+                "Discharge planning",
+                "Group therapy"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "For alcohol withdrawal in the ICU, preferred agent is:",
+            "options": [
+                "Flumazenil",
+                "Lorazepam",
+                "Haloperidol",
+                "Zolpidem"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which is a hallmark of anorexia nervosa?",
+            "options": [
+                "Binge eating only",
+                "Body image disturbance",
+                "Hyperphagia",
+                "Amenorrhea required"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Refeeding syndrome is characterized primarily by:",
+            "options": [
+                "Hyperkalemia",
+                "Hypophosphatemia",
+                "Hypernatremia",
+                "Hypermagnesemia"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A brief psychotic disorder lasts between:",
+            "options": [
+                "<24 hours",
+                "1 day to <1 month",
+                "1–6 months",
+                ">6 months"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which sleep change is typical in depression?",
+            "options": [
+                "↑ REM latency",
+                "↓ REM latency",
+                "↑ Slow-wave sleep",
+                "No change"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A patient has EPS dystonia from haloperidol. Best acute treatment:",
+            "options": [
+                "Propranolol",
+                "Benztropine",
+                "Amantadine",
+                "Tetrabenazine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which antidepressant is safest in sexual dysfunction risk?",
+            "options": [
+                "Paroxetine",
+                "Bupropion",
+                "Fluoxetine",
+                "Sertraline"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which is a risk with MAOIs and tyramine?",
+            "options": [
+                "Serotonin syndrome",
+                "Hypertensive crisis",
+                "Stevens-Johnson",
+                "QT prolongation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Core feature of borderline personality disorder:",
+            "options": [
+                "Grandiosity",
+                "Detachment",
+                "Instability in relationships and self-image",
+                "Perfectionism"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Bulimia nervosa first-line psychotherapy is:",
+            "options": [
+                "Psychoanalysis",
+                "CBT",
+                "DBT",
+                "Family therapy only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which antipsychotic is highest risk for hyperprolactinemia?",
+            "options": [
+                "Risperidone",
+                "Quetiapine",
+                "Ziprasidone",
+                "Clozapine"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Postpartum psychosis initial management priority:",
+            "options": [
+                "Outpatient follow-up",
+                "Ensure safety and urgent hospitalization",
+                "Start SSRI only",
+                "Psychoeducation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which medication reduces nightmares in PTSD?",
+            "options": [
+                "Prazosin",
+                "Haloperidol",
+                "Topiramate",
+                "Baclofen"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Cannabis use disorder typical acute effect:",
+            "options": [
+                "Miosis",
+                "Conjunctival injection",
+                "Bradycardia",
+                "Diaphoresis"
+            ],
+            "answer": 1
+        }
+    ],
+    "Pediatric Nursing": [
+        {
+            "question": "The most reliable indicator of dehydration severity in infants is:",
+            "options": [
+                "Sunken eyes",
+                "Skin turgor",
+                "Capillary refill time",
+                "Weight loss"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Best initial fluid for severe dehydration with shock in a child:",
+            "options": [
+                "D5W",
+                "0.9% normal saline bolus",
+                "0.45% saline",
+                "Ringer lactate with dextrose"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The narrowest part of the pediatric airway is at the:",
+            "options": [
+                "Vocal cords",
+                "Cricoid cartilage",
+                "Epiglottis",
+                "Tracheal rings"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which vaccine is contraindicated in severe egg allergy?",
+            "options": [
+                "OPV",
+                "MMR",
+                "Influenza (some formulations)",
+                "BCG"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "First-line management of croup with stridor at rest:",
+            "options": [
+                "Oral antihistamines",
+                "Nebulized epinephrine and dexamethasone",
+                "Antibiotics",
+                "Heliox only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Age at which posterior fontanelle normally closes:",
+            "options": [
+                "At birth",
+                "2 months",
+                "6 months",
+                "12 months"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Most common cyanotic congenital heart disease beyond infancy:",
+            "options": [
+                "TOF",
+                "TGA",
+                "Tricuspid atresia",
+                "TAPVR"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Primary therapy for Kawasaki disease in the acute phase:",
+            "options": [
+                "High-dose aspirin + IVIG",
+                "Steroids alone",
+                "Antibiotics",
+                "Clopidogrel"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "A 2-month-old with projectile non-bilious vomiting likely has:",
+            "options": [
+                "Duodenal atresia",
+                "Pyloric stenosis",
+                "Malrotation with volvulus",
+                "GERD"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Developmental milestone: rolls front to back by:",
+            "options": [
+                "2 months",
+                "4 months",
+                "6 months",
+                "9 months"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Neonatal sepsis most common early-onset organism:",
+            "options": [
+                "E. coli",
+                "GBS",
+                "Listeria",
+                "Klebsiella"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Management of moderate asthma exacerbation in child includes:",
+            "options": [
+                "Oral steroids + SABA",
+                "Antibiotics",
+                "Antihistamines only",
+                "Heliox only"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "First-line for status epilepticus in pediatrics:",
+            "options": [
+                "Phenytoin",
+                "Diazepam/lorazepam",
+                "Levetiracetam first",
+                "Valproate first"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A newborn with delayed passage of meconium, abdominal distension suggests:",
+            "options": [
+                "Meconium plug",
+                "Hirschsprung disease",
+                "Pyloric stenosis",
+                "Necrotizing enterocolitis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Vitamin K prophylaxis in newborns prevents:",
+            "options": [
+                "Neonatal tetanus",
+                "Hemorrhagic disease of the newborn",
+                "Sepsis",
+                "Rickets"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Breast milk is deficient most notably in:",
+            "options": [
+                "Vitamin A",
+                "Vitamin D",
+                "Vitamin C",
+                "Calcium"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Most common cause of acute bronchiolitis:",
+            "options": [
+                "Adenovirus",
+                "Parainfluenza",
+                "RSV",
+                "Influenza"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Adolescent screening for depression recommended starting at age:",
+            "options": [
+                "8 years",
+                "10 years",
+                "12 years",
+                "16 years"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "A 5-year-old with painful limp after viral illness likely:",
+            "options": [
+                "Septic arthritis",
+                "Transient synovitis",
+                "SCFE",
+                "Osteosarcoma"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "SCFE typically presents with pain localized to:",
+            "options": [
+                "Knee or groin",
+                "Back",
+                "Ankle",
+                "Shoulder"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Failure to thrive first assessment priority:",
+            "options": [
+                "Hospitalize immediately",
+                "Detailed feeding history and growth charting",
+                "CT brain",
+                "Endoscopy"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Nephrotic syndrome hallmark:",
+            "options": [
+                "Hematuria",
+                "Proteinuria >40 mg/m2/hr",
+                "Hypertension only",
+                "Polyuria"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Primary therapy for minimal change disease:",
+            "options": [
+                "ACE inhibitors",
+                "High-dose steroids",
+                "Cyclophosphamide first",
+                "Plasmapheresis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "UTI in infants: best screening test:",
+            "options": [
+                "Urine dipstick leukocyte esterase",
+                "Urine culture only",
+                "Renal biopsy",
+                "Ultrasound first"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "First-line antibiotic for uncomplicated pediatric UTI (region dependent):",
+            "options": [
+                "Nitrofurantoin",
+                "Amoxicillin-clavulanate",
+                "Ciprofloxacin",
+                "Azithromycin"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The most sensitive sign of severe respiratory distress:",
+            "options": [
+                "Wheezing audible",
+                "Nasal flaring and intercostal retractions",
+                "Productive cough",
+                "Cyanosis only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Cyanotic spell management in TOF includes:",
+            "options": [
+                "Lay supine",
+                "Knee-chest position + oxygen + morphine",
+                "Beta-blockers avoided",
+                "Fluid restriction"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Lead poisoning in children initial diagnostic test:",
+            "options": [
+                "Hair lead",
+                "Capillary blood lead with confirmatory venous",
+                "Urine lead",
+                "X-ray only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Child with barking cough and inspiratory stridor at night likely:",
+            "options": [
+                "Epiglottitis",
+                "Croup",
+                "Foreign body",
+                "Asthma"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Epiglottitis common organism in unvaccinated:",
+            "options": [
+                "HiB",
+                "Strep pyogenes",
+                "Staph aureus",
+                "RSV"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Acute rheumatic fever major criteria include:",
+            "options": [
+                "Chorea and carditis",
+                "Arthralgia only",
+                "Fever only",
+                "CRP only"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Henoch–Schönlein purpura classic triad includes:",
+            "options": [
+                "Rash, ARDS, seizures",
+                "Palpable purpura, arthralgia, abdominal pain",
+                "Uveitis, arthritis, urethritis",
+                "Rash, edema, anemia"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Intussusception classic sign on ultrasound:",
+            "options": [
+                "Target sign",
+                "Double bubble",
+                "Steeple sign",
+                "Thumbprinting"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "First-line reduction for ileocolic intussusception:",
+            "options": [
+                "Surgery always",
+                "Air/contrast enema",
+                "Antibiotics only",
+                "Steroids"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Neonate with bilious vomiting suspect first:",
+            "options": [
+                "Pyloric stenosis",
+                "Malrotation with midgut volvulus",
+                "GERD",
+                "HPS"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Most common cause of seizures in neonates:",
+            "options": [
+                "Hypoglycemia",
+                "Hypoxic-ischemic encephalopathy",
+                "Hypocalcemia",
+                "Infection"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A 4-year-old with nephritic syndrome post-strep—expected finding:",
+            "options": [
+                "Massive proteinuria",
+                "Cola-colored urine and hypertension",
+                "Severe hypoalbuminemia",
+                "Hypercholesterolemia"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Duchenne muscular dystrophy inheritance:",
+            "options": [
+                "Autosomal dominant",
+                "Autosomal recessive",
+                "X-linked recessive",
+                "Mitochondrial"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Bronchiolitis mainstay of treatment:",
+            "options": [
+                "Ribavirin",
+                "Supportive care",
+                "Routine steroids",
+                "Antibiotics"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Vaccine given at birth in most programs:",
+            "options": [
+                "DTaP",
+                "Hepatitis B",
+                "Rotavirus",
+                "Influenza"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Rotavirus vaccine first dose latest age:",
+            "options": [
+                "12 weeks",
+                "15 weeks",
+                "20 weeks",
+                "24 weeks"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Febrile seizure features of simple type include:",
+            "options": [
+                "Focal and >15 min",
+                "Generalized, <15 min, once in 24h",
+                "Recurrent in 24h",
+                "With postictal paralysis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "First-line antibiotic for acute otitis media (no allergy):",
+            "options": [
+                "Amoxicillin",
+                "Azithromycin",
+                "Ceftriaxone",
+                "Clarithromycin"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Primary prevention of rheumatic fever:",
+            "options": [
+                "Tonsillectomy",
+                "Penicillin for strep pharyngitis",
+                "Vaccination",
+                "Aspirin"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A child with periorbital edema and frothy urine likely has:",
+            "options": [
+                "Nephritic syndrome",
+                "Nephrotic syndrome",
+                "Diabetes insipidus",
+                "UTI"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "HHFNC (high flow nasal cannula) in children improves:",
+            "options": [
+                "Work of breathing and oxygenation",
+                "Only heart rate",
+                "Only fever",
+                "Blood pressure"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Most common pediatric abdominal emergency:",
+            "options": [
+                "Appendicitis",
+                "Intussusception",
+                "Volvulus",
+                "Pyloric stenosis"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Sickle cell disease acute chest syndrome treatment includes:",
+            "options": [
+                "Fluids only",
+                "Antibiotics, oxygen, incentive spirometry, transfusion as needed",
+                "Steroids only",
+                "No hospitalization"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "First-line for pinworm infestation:",
+            "options": [
+                "Albendazole",
+                "Praziquantel",
+                "Ivermectin",
+                "Metronidazole"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "A 3-year-old with acute stridor and drooling, toxic-appearing—first step:",
+            "options": [
+                "Throat exam with tongue depressor",
+                "Secure airway in OR with ENT",
+                "Oral antibiotics",
+                "Send home"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Most common cause of community-acquired pneumonia in school-aged children:",
+            "options": [
+                "S. pneumoniae",
+                "Mycoplasma pneumoniae",
+                "S. aureus",
+                "Chlamydia trachomatis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Iron deficiency anemia first sign on CBC:",
+            "options": [
+                "Macrocytosis",
+                "Microcytosis",
+                "Leukopenia",
+                "Thrombocytopenia"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Management of suspected anaphylaxis in child:",
+            "options": [
+                "Antihistamines first",
+                "IM epinephrine promptly",
+                "Steroids only",
+                "Observation only"
+            ],
+            "answer": 1
+        }
+    ],
+    "Obstetrics and Gynecology Nursing": [
+        {
+            "question": "The definitive management for severe preeclampsia at term is:",
+            "options": [
+                "Magnesium sulfate only",
+                "Antihypertensives only",
+                "Immediate delivery",
+                "Expectant management"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "First-line anticonvulsant for eclampsia:",
+            "options": [
+                "Diazepam",
+                "Phenytoin",
+                "Magnesium sulfate",
+                "Levetiracetam"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Normal fetal heart rate baseline:",
+            "options": [
+                "90–110 bpm",
+                "110–160 bpm",
+                "160–190 bpm",
+                ">190 bpm"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Most common cause of postpartum hemorrhage:",
+            "options": [
+                "Uterine atony",
+                "Retained placenta",
+                "Uterine inversion",
+                "Coagulopathy"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Active management of third stage includes:",
+            "options": [
+                "Oxytocin, controlled cord traction",
+                "Ergometrine only",
+                "Uterine massage only",
+                "Misoprostol only"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Placenta previa hallmark presentation:",
+            "options": [
+                "Painful bleeding",
+                "Painless bleeding",
+                "Fever and bleeding",
+                "Pruritus"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Abruptio placentae hallmark presentation:",
+            "options": [
+                "Painless bleeding",
+                "Painful bleeding with tender uterus",
+                "No bleeding",
+                "Itching"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Partogram monitors:",
+            "options": [
+                "Lochia",
+                "Cervical dilatation and labor progress",
+                "Fetal anomalies",
+                "Placental location"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Induction of labor absolute contraindication:",
+            "options": [
+                "Previous low transverse CS",
+                "Placenta previa major",
+                "Post-dates",
+                "PROM at term"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Biophysical profile components include all EXCEPT:",
+            "options": [
+                "Fetal breathing",
+                "Fetal tone",
+                "Cervical length",
+                "Amniotic fluid volume"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Gestational diabetes screening test at 24–28 weeks:",
+            "options": [
+                "50 g GCT",
+                "OGTT 75 g fasting only",
+                "HbA1c",
+                "Random glucose"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Medication safe for chronic hypertension in pregnancy:",
+            "options": [
+                "ACE inhibitors",
+                "Methyldopa",
+                "Warfarin",
+                "Statins"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Shoulder dystocia first maneuver:",
+            "options": [
+                "Zavanelli",
+                "McRoberts with suprapubic pressure",
+                "Fundal pressure",
+                "Forceps"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A non-stress test reactive definition includes:",
+            "options": [
+                "No accelerations",
+                ">=2 accelerations 15x15 in 20 min",
+                "Late decelerations",
+                "Variable decelerations"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Uterotonic contraindicated in hypertension:",
+            "options": [
+                "Oxytocin",
+                "Carboprost",
+                "Misoprostol",
+                "Ergometrine"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Folic acid recommended preconception to reduce NTD:",
+            "options": [
+                "100 mcg/day",
+                "200 mcg/day",
+                "400 mcg/day",
+                "1 mg/day for all"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "First-line antibiotic for asymptomatic bacteriuria in pregnancy (region dependent):",
+            "options": [
+                "Ciprofloxacin",
+                "Nitrofurantoin (avoid at term)",
+                "Doxycycline",
+                "TMP-SMX in 1st trimester"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A 28-week placenta previa with bleeding—initial management:",
+            "options": [
+                "Vaginal exam",
+                "Stabilize, ultrasound, avoid PV exam",
+                "Immediate induction",
+                "Send home"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Preterm labor tocolysis is most effective before:",
+            "options": [
+                "20 weeks",
+                "24 weeks",
+                "34 weeks",
+                "41 weeks"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Antenatal corticosteroids recommended for threatened preterm birth between:",
+            "options": [
+                "20–24 weeks",
+                "24–34 weeks",
+                "34–37 weeks",
+                ">=37 weeks"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "HELLP stands for:",
+            "options": [
+                "Hemolysis, Elevated LFTs, Low Platelets",
+                "Hyperemesis, Edema, Low Protein",
+                "Hemorrhage, Eclampsia, Low BP",
+                "High LFT, Low Potassium"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Management of ectopic pregnancy stable, small, unruptured:",
+            "options": [
+                "Expectant only",
+                "Methotrexate",
+                "Hysterectomy",
+                "High-dose oxytocin"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Absolute contraindication to methotrexate in ectopic:",
+            "options": [
+                "β-hCG 1000",
+                "Hemodynamic instability",
+                "No cardiac activity",
+                "Size <3.5 cm"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "HPV vaccine protects primarily against:",
+            "options": [
+                "HPV 6/11 only",
+                "HPV 16/18 (cervical cancer) ± 6/11",
+                "All HPV types",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Primary screening test for cervical cancer:",
+            "options": [
+                "Pelvic US",
+                "Pap smear / HPV testing",
+                "CA-125",
+                "Colonoscopy"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Ovarian torsion most common risk factor:",
+            "options": [
+                "PID",
+                "Ovarian mass/cyst",
+                "Endometriosis",
+                "IUCD"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "First-line for primary dysmenorrhea:",
+            "options": [
+                "Antibiotics",
+                "NSAIDs ± hormonal contraception",
+                "Opioids",
+                "Surgery"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "PCOS diagnostic criteria include:",
+            "options": [
+                "Hyperandrogenism, ovulatory dysfunction, polycystic ovaries",
+                "Hyperprolactinemia",
+                "Hyperthyroidism",
+                "Elevated FSH"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Gestational trophoblastic neoplasia monitoring uses:",
+            "options": [
+                "CA-125",
+                "β-hCG trends",
+                "AFP",
+                "CEA"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Complete mole karyotype usually:",
+            "options": [
+                "46,XX paternal only",
+                "46,XY maternal only",
+                "Triploid",
+                "Haploid"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Breastfeeding contraindicated in:",
+            "options": [
+                "Maternal mastitis",
+                "HIV (settings without ART) and certain infections",
+                "Hepatitis B vaccinated infant",
+                "Maternal diabetes"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Lochia rubra persists typically up to:",
+            "options": [
+                "1 day",
+                "3–4 days",
+                "10 days",
+                "6 weeks"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Emergency contraception most effective within:",
+            "options": [
+                "24 h",
+                "72 h (levonorgestrel)",
+                "120 h all methods",
+                "No time limit"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Copper IUCD EC window:",
+            "options": [
+                "24 h",
+                "72 h",
+                "120 h",
+                "10 days"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Most sensitive marker for ovarian reserve:",
+            "options": [
+                "FSH Day 3",
+                "AMH",
+                "LH",
+                "Estradiol"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "First-line antibiotic for PID (outpatient) typically includes:",
+            "options": [
+                "Amoxicillin",
+                "Ceftriaxone + doxycycline ± metronidazole",
+                "Ciprofloxacin",
+                "Azithromycin only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Prophylaxis for GBS in labor indicated when:",
+            "options": [
+                "Any prior pregnancy GBS+",
+                "GBS bacteriuria this pregnancy",
+                "Scheduled CS with intact membranes",
+                "No screening"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Endometriosis gold standard diagnosis:",
+            "options": [
+                "US",
+                "MRI",
+                "Diagnostic laparoscopy",
+                "CA-125"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Rubella infection early pregnancy risk:",
+            "options": [
+                "Neural tube defects",
+                "Congenital rubella syndrome",
+                "Gastroschisis",
+                "Pyloric stenosis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Twin-twin transfusion seen in:",
+            "options": [
+                "Dizygotic dichorionic",
+                "Monochorionic diamniotic",
+                "Monoamniotic monochorionic only",
+                "Any twin"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Abruption risk increased with:",
+            "options": [
+                "Hypotension",
+                "Hypertension and smoking",
+                "High BMI only",
+                "Asthma"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Postpartum endometritis first-line therapy:",
+            "options": [
+                "Oral amoxicillin",
+                "IV clindamycin + gentamicin",
+                "Oral azithromycin",
+                "No antibiotics"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Mifepristone is a:",
+            "options": [
+                "Progesterone receptor agonist",
+                "Progesterone receptor antagonist",
+                "Estrogen agonist",
+                "Oxytocin analogue"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Uterine rupture risk highest with:",
+            "options": [
+                "No prior surgery",
+                "Prior classical cesarean scar",
+                "Low transverse CS",
+                "Myomectomy distant from cavity"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A 32-week with PPROM—next step:",
+            "options": [
+                "Immediate delivery always",
+                "Latency antibiotics + steroids if stable",
+                "No monitoring",
+                "Tocolysis for 2 weeks always"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Late decelerations indicate:",
+            "options": [
+                "Cord compression",
+                "Uteroplacental insufficiency",
+                "Head compression",
+                "Normal pattern"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Contraception suitable during breastfeeding early postpartum:",
+            "options": [
+                "Combined OCPs immediately",
+                "Progestin-only methods",
+                "Estrogen patch",
+                "No method"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Primary amenorrhea with normal secondary sexual characteristics suggests:",
+            "options": [
+                "Mullerian agenesis",
+                "Turner syndrome",
+                "Kallmann syndrome",
+                "Hyperprolactinemia"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Most common site of endometriosis:",
+            "options": [
+                "Uterus fundus",
+                "Ovaries",
+                "Cervix",
+                "Broad ligament"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Cancer antigen commonly elevated in epithelial ovarian cancer:",
+            "options": [
+                "CA-125",
+                "CEA",
+                "CA 19-9",
+                "AFP"
+            ],
+            "answer": 0
+        }
+    ],
+    "Community Health Nursing": [
+        {
+            "question": "Herd immunity primarily protects:",
+            "options": [
+                "Vaccinated individuals only",
+                "Unvaccinated individuals in the community",
+                "Only immunocompromised",
+                "Only children"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Incidence measures:",
+            "options": [
+                "Existing cases",
+                "New cases over a period",
+                "Case fatality",
+                "Mortality only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Best study design to assess risk factor leading to disease:",
+            "options": [
+                "Cross-sectional",
+                "Cohort",
+                "Case series",
+                "Ecological"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Relative risk is directly obtained from:",
+            "options": [
+                "Case-control",
+                "Cohort",
+                "Cross-sectional",
+                "Case series"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Odds ratio is primarily used in:",
+            "options": [
+                "Cohort",
+                "Case-control",
+                "RCT",
+                "Ecologic"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Confounding is best addressed by:",
+            "options": [
+                "Ignoring",
+                "Randomization, matching, stratification",
+                "Selection bias",
+                "Ascertainment bias"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Primary prevention example:",
+            "options": [
+                "Pap smear",
+                "Vaccination",
+                "Chemotherapy",
+                "Rehabilitation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Secondary prevention example:",
+            "options": [
+                "Immunization",
+                "Screening",
+                "Health education",
+                "Palliative care"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Tertiary prevention focuses on:",
+            "options": [
+                "Preventing occurrence",
+                "Early detection",
+                "Reducing disability and rehabilitation",
+                "Vector control"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Endemic disease is:",
+            "options": [
+                "Occurs worldwide",
+                "Constantly present in an area",
+                "Sudden increase",
+                "New disease"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Positive predictive value depends on:",
+            "options": [
+                "Specificity only",
+                "Disease prevalence",
+                "Sensitivity only",
+                "Sample size only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A highly sensitive test will:",
+            "options": [
+                "Rule in",
+                "Rule out when negative",
+                "Be specific",
+                "Be less useful"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "ICEBERG phenomenon refers to:",
+            "options": [
+                "Visible and invisible components of disease burden",
+                "Climate impact",
+                "Vector breeding",
+                "Seasonal variation"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "DALY combines:",
+            "options": [
+                "Incidence + prevalence",
+                "Mortality + morbidity",
+                "Sensitivity + specificity",
+                "RR + OR"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Vector control for malaria includes:",
+            "options": [
+                "ITNs and IRS",
+                "Isolation",
+                "Antibiotics",
+                "Chemotherapy"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "BCG protects primarily against:",
+            "options": [
+                "Pulmonary TB in adults",
+                "Severe childhood TB (miliary/meningitis)",
+                "Leprosy",
+                "Pneumonia"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Basic reproductive number R0 represents:",
+            "options": [
+                "Average secondary cases from an index case",
+                "Case fatality",
+                "Incubation period",
+                "Serial interval"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Vaccine cold chain maintained at:",
+            "options": [
+                "-20°C always",
+                "2–8°C for most vaccines",
+                "Room temp",
+                ">10°C"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A cluster randomized trial is useful for:",
+            "options": [
+                "Individual therapy",
+                "Community-level interventions",
+                "Case series",
+                "Diagnostic test"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Case fatality ratio measures:",
+            "options": [
+                "Risk of infection",
+                "Severity among diagnosed cases",
+                "Prevalence",
+                "Incidence"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Quarantine applies to:",
+            "options": [
+                "Sick individuals",
+                "Exposed but healthy individuals",
+                "Recovered individuals",
+                "Vaccinated individuals"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Isolation applies to:",
+            "options": [
+                "Healthy exposed",
+                "Sick infectious individuals",
+                "Recovered",
+                "Vaccinated"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Screening program effectiveness best measured by:",
+            "options": [
+                "Sensitivity",
+                "Reduction in disease-specific mortality",
+                "Specificity",
+                "PPV"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Epidemic curve helps infer:",
+            "options": [
+                "Causality",
+                "Mode and timing of spread",
+                "Treatment",
+                "All of the above"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Infant mortality rate is deaths per 1000 live births under:",
+            "options": [
+                "28 days",
+                "1 year",
+                "5 years",
+                "Neonatal period only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Neonatal mortality rate counts deaths within:",
+            "options": [
+                "7 days",
+                "28 days",
+                "1 year",
+                "5 years"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Under-five mortality rate target of SDGs focuses on:",
+            "options": [
+                "<25 per 1000",
+                "<5 per 1000",
+                "<50 per 1000",
+                "<10 per 1000"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "A Type I error is:",
+            "options": [
+                "False negative",
+                "False positive",
+                "Power",
+                "Effect size"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Power of a study increases with:",
+            "options": [
+                "Higher alpha",
+                "Larger sample size",
+                "More confounders",
+                "Lower effect size"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "MMR vaccine schedule typically includes doses at:",
+            "options": [
+                "Birth only",
+                "9–12 months and 15–18 months (region dependent)",
+                "School entry only",
+                "Adolescence only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Oral rehydration solution key component driving absorption:",
+            "options": [
+                "Protein",
+                "Glucose-sodium co-transport",
+                "Fat",
+                "Potassium only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Point source epidemic curve shows:",
+            "options": [
+                "Propagated pattern",
+                "Single sharp peak",
+                "No peak",
+                "Multiple waves only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The gold standard for TB diagnosis in programmatic settings:",
+            "options": [
+                "Chest X-ray",
+                "Sputum microscopy/culture or NAAT per protocol",
+                "Mantoux only",
+                "ESR"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Primary health care elements include all EXCEPT:",
+            "options": [
+                "Education",
+                "Food supply and nutrition",
+                "Advanced cardiac surgery",
+                "Maternal-child health"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Risk communication in outbreaks emphasizes:",
+            "options": [
+                "Transparency and trust",
+                "Suppressing info",
+                "Technical jargon only",
+                "No community engagement"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Health promotion strategy that empowers communities:",
+            "options": [
+                "Top-down mandates",
+                "Ottawa Charter approaches",
+                "No participation",
+                "Punitive measures"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Best indicator of community nutritional status:",
+            "options": [
+                "Adult BMI",
+                "Under-five anthropometry",
+                "Calorie sales",
+                "Food imports"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Smoke-free policies reduce:",
+            "options": [
+                "Cardiovascular events",
+                "Only cancer",
+                "Only asthma",
+                "No outcomes"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Antenatal care minimum recommended visits:",
+            "options": [
+                "1",
+                "4 or more (per guidelines)",
+                "2",
+                "3"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Full immunization at 1 year implies child has received:",
+            "options": [
+                "Only BCG",
+                "All vaccines per schedule up to 12 months",
+                "Only OPV",
+                "Only DPT"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The concept of primordial prevention is to:",
+            "options": [
+                "Treat early disease",
+                "Prevent emergence of risk factors",
+                "Rehab",
+                "Palliative"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Elimination vs eradication: eradication means:",
+            "options": [
+                "Local zero",
+                "Worldwide zero permanent reduction",
+                "Control only",
+                "Temporary interruption"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "A health worker safety needle device is an example of:",
+            "options": [
+                "Administrative control",
+                "Engineering control",
+                "PPE",
+                "Elimination"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Population attributable risk depends on:",
+            "options": [
+                "RR and prevalence of exposure",
+                "Sensitivity",
+                "Specificity",
+                "Alpha"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Program evaluation outcome measure example:",
+            "options": [
+                "Process indicators only",
+                "Disease incidence reduction",
+                "Number of trainings",
+                "Budget spent"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Confidentiality in public health is balanced with:",
+            "options": [
+                "No disclosure ever",
+                "Mandatory reporting and public safety",
+                "Always disclose",
+                "Media first"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "An epidemic due to person-to-person spread shows:",
+            "options": [
+                "Single sharp peak",
+                "Progressive increase with successive peaks",
+                "No change",
+                "Random"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Primary case is:",
+            "options": [
+                "First detected case",
+                "First case in population",
+                "Most severe case",
+                "Index case"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Index case is:",
+            "options": [
+                "First detected case",
+                "Case that brings attention to outbreak",
+                "First infection ever",
+                "Carrier"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Case-control studies are prone to:",
+            "options": [
+                "Recall bias",
+                "Loss to follow-up bias",
+                "Lead-time bias",
+                "Healthy worker effect"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Healthy worker effect biases:",
+            "options": [
+                "Case-control",
+                "Occupational cohort studies",
+                "Cross-sectional",
+                "RCTs"
+            ],
+            "answer": 1
+        }
+    ],
+    "Nursing Administration": [
+        {
+            "question": "Which leadership style promotes shared decision-making and team empowerment?",
+            "options": [
+                "Autocratic",
+                "Democratic",
+                "Laissez-faire",
+                "Transactional"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The most effective approach to conflict resolution in nursing teams is:",
+            "options": [
+                "Avoiding the conflict",
+                "Compromising on all issues",
+                "Collaborative problem-solving",
+                "Forcing a decision"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which budgeting method starts from zero and justifies all expenses?",
+            "options": [
+                "Incremental budgeting",
+                "Zero-based budgeting",
+                "Flexible budgeting",
+                "Capital budgeting"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The nurse-to-patient ratio in ICU should typically be:",
+            "options": [
+                "1:8",
+                "1:4",
+                "1:2 or 1:1",
+                "1:6"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which quality improvement model uses Plan-Do-Study-Act cycles?",
+            "options": [
+                "Six Sigma",
+                "Lean methodology",
+                "PDSA model",
+                "Root cause analysis"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The primary purpose of nursing informatics is to:",
+            "options": [
+                "Replace nurses with computers",
+                "Improve patient care through technology",
+                "Reduce hospital costs only",
+                "Eliminate paperwork"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which scheduling method provides the most continuity of care?",
+            "options": [
+                "8-hour shifts",
+                "12-hour shifts",
+                "Primary nursing model",
+                "Float pool system"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The most important factor in nurse retention is:",
+            "options": [
+                "High salary",
+                "Flexible scheduling",
+                "Supportive work environment",
+                "Location convenience"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which delegation principle is most critical for patient safety?",
+            "options": [
+                "Delegate to save time",
+                "Match task complexity to competence",
+                "Always delegate routine tasks",
+                "Delegate based on seniority"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The Joint Commission's National Patient Safety Goals focus on:",
+            "options": [
+                "Cost reduction",
+                "Staff satisfaction",
+                "Preventing medical errors",
+                "Increasing efficiency"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which leadership theory emphasizes adapting style to situation?",
+            "options": [
+                "Trait theory",
+                "Behavioral theory",
+                "Situational leadership",
+                "Transformational leadership"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The most effective way to implement change in nursing practice is:",
+            "options": [
+                "Top-down mandates",
+                "Evidence-based gradual implementation",
+                "Immediate full implementation",
+                "Voluntary adoption"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which performance appraisal method focuses on specific behaviors?",
+            "options": [
+                "Trait-based evaluation",
+                "Behaviorally anchored rating scales",
+                "Ranking method",
+                "Graphic rating scales"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The primary goal of case management is to:",
+            "options": [
+                "Reduce length of stay",
+                "Coordinate care across continuum",
+                "Decrease nursing workload",
+                "Increase hospital revenue"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which communication style is most effective for nurse managers?",
+            "options": [
+                "Passive",
+                "Aggressive",
+                "Assertive",
+                "Passive-aggressive"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The concept of 'span of control' refers to:",
+            "options": [
+                "Number of patients per nurse",
+                "Number of direct reports per manager",
+                "Hospital bed capacity",
+                "Budget allocation limits"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which factor most influences nursing job satisfaction?",
+            "options": [
+                "Salary level",
+                "Autonomy in practice",
+                "Shift preferences",
+                "Hospital size"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The most effective strategy for reducing nurse turnover is:",
+            "options": [
+                "Increasing wages",
+                "Improving nurse-manager relationships",
+                "Reducing workload",
+                "Offering more benefits"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which quality indicator measures nursing-sensitive outcomes?",
+            "options": [
+                "Patient satisfaction scores",
+                "Hospital-acquired pressure ulcers",
+                "Length of stay",
+                "Readmission rates"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The primary purpose of nursing peer review is to:",
+            "options": [
+                "Discipline poor performers",
+                "Improve quality of care",
+                "Reduce liability",
+                "Meet accreditation requirements"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which staffing model provides 24-hour accountability?",
+            "options": [
+                "Team nursing",
+                "Functional nursing",
+                "Primary nursing",
+                "Case method"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The most important aspect of effective delegation is:",
+            "options": [
+                "Clear communication of expectations",
+                "Choosing the right person",
+                "Following up on progress",
+                "All of the above"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Which budget variance requires immediate attention?",
+            "options": [
+                "5% over budget",
+                "Unfavorable variance in critical supplies",
+                "Seasonal fluctuations",
+                "Minor equipment costs"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The concept of 'magnet status' indicates:",
+            "options": [
+                "High technology hospital",
+                "Excellence in nursing practice",
+                "Large hospital system",
+                "Teaching hospital designation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which risk management strategy is most proactive?",
+            "options": [
+                "Incident reporting",
+                "Root cause analysis",
+                "Prevention programs",
+                "Insurance coverage"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The most effective way to manage nursing shortage is:",
+            "options": [
+                "Hire more staff",
+                "Increase overtime",
+                "Improve retention strategies",
+                "Use agency nurses"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which leadership competency is most critical for nurse managers?",
+            "options": [
+                "Technical skills",
+                "Emotional intelligence",
+                "Financial knowledge",
+                "Computer literacy"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The primary goal of continuous quality improvement is:",
+            "options": [
+                "Meet regulatory requirements",
+                "Reduce costs",
+                "Enhance patient outcomes",
+                "Improve staff satisfaction"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which scheduling approach best supports work-life balance?",
+            "options": [
+                "Fixed 8-hour shifts",
+                "Rotating shifts",
+                "Self-scheduling",
+                "Mandatory overtime"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The most important factor in successful change management is:",
+            "options": [
+                "Strong leadership support",
+                "Adequate resources",
+                "Staff buy-in",
+                "Clear timeline"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which performance metric best reflects nursing quality?",
+            "options": [
+                "Patient satisfaction scores",
+                "Nursing-sensitive indicators",
+                "Cost per patient day",
+                "Length of stay"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The primary purpose of nursing standards is to:",
+            "options": [
+                "Protect hospitals from liability",
+                "Guide professional practice",
+                "Meet accreditation requirements",
+                "Standardize documentation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which conflict resolution style is most appropriate for critical issues?",
+            "options": [
+                "Avoiding",
+                "Accommodating",
+                "Collaborating",
+                "Competing"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The most effective way to ensure patient safety is:",
+            "options": [
+                "Increase staffing levels",
+                "Implement safety protocols",
+                "Create a culture of safety",
+                "Use more technology"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which budgeting approach allows for volume fluctuations?",
+            "options": [
+                "Fixed budget",
+                "Flexible budget",
+                "Zero-based budget",
+                "Capital budget"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The primary benefit of shared governance is:",
+            "options": [
+                "Reduced management costs",
+                "Improved nurse autonomy",
+                "Faster decision making",
+                "Better patient outcomes"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which quality improvement tool helps identify root causes?",
+            "options": [
+                "Flow chart",
+                "Fishbone diagram",
+                "Control chart",
+                "Histogram"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The most important aspect of nursing documentation is:",
+            "options": [
+                "Legibility",
+                "Timeliness",
+                "Accuracy and completeness",
+                "Brevity"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which staffing method considers patient acuity?",
+            "options": [
+                "Fixed nurse-to-patient ratios",
+                "Patient classification systems",
+                "Historical averages",
+                "Budget constraints"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The primary goal of nursing informatics systems is to:",
+            "options": [
+                "Reduce paperwork",
+                "Support clinical decision making",
+                "Meet regulatory requirements",
+                "Improve efficiency"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which leadership approach is most effective during crisis?",
+            "options": [
+                "Democratic",
+                "Laissez-faire",
+                "Directive/Autocratic",
+                "Transformational"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The most critical factor in medication error prevention is:",
+            "options": [
+                "Technology solutions",
+                "Staff education",
+                "System design",
+                "All of the above"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Which performance improvement methodology focuses on eliminating waste?",
+            "options": [
+                "Six Sigma",
+                "Lean",
+                "PDSA",
+                "Root cause analysis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The primary purpose of nursing care plans is to:",
+            "options": [
+                "Meet documentation requirements",
+                "Guide individualized patient care",
+                "Satisfy accreditation standards",
+                "Facilitate billing"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which factor most influences patient satisfaction with nursing care?",
+            "options": [
+                "Technical competence",
+                "Communication and responsiveness",
+                "Hospital amenities",
+                "Length of stay"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The most effective approach to staff development is:",
+            "options": [
+                "Mandatory training sessions",
+                "Self-directed learning",
+                "Competency-based programs",
+                "On-the-job training"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which quality measure is most sensitive to nursing care?",
+            "options": [
+                "Mortality rates",
+                "Hospital-acquired infections",
+                "Patient falls",
+                "Readmission rates"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The primary benefit of evidence-based practice is:",
+            "options": [
+                "Cost reduction",
+                "Improved patient outcomes",
+                "Regulatory compliance",
+                "Staff satisfaction"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which communication tool is most effective for shift handoffs?",
+            "options": [
+                "Verbal report only",
+                "Written notes only",
+                "SBAR format",
+                "Electronic records only"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The most important consideration in nurse scheduling is:",
+            "options": [
+                "Cost minimization",
+                "Staff preferences",
+                "Patient care needs",
+                "Manager convenience"
+            ],
+            "answer": 2
+        }
+    ],
+    "Nursing Research": [
+        {
+            "question": "A p-value of 0.03 indicates:",
+            "options": [
+                "Null hypothesis is true",
+                "3% probability results due to chance under H0",
+                "Effect size is large",
+                "Study is clinically significant"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which research design provides the strongest evidence for causation?",
+            "options": [
+                "Cross-sectional study",
+                "Case-control study",
+                "Randomized controlled trial",
+                "Cohort study"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The primary purpose of a literature review is to:",
+            "options": [
+                "Summarize existing knowledge",
+                "Identify research gaps",
+                "Provide theoretical framework",
+                "All of the above"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Which sampling method ensures every member has equal chance of selection?",
+            "options": [
+                "Convenience sampling",
+                "Purposive sampling",
+                "Simple random sampling",
+                "Snowball sampling"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Type I error occurs when:",
+            "options": [
+                "Null hypothesis is incorrectly rejected",
+                "Null hypothesis is incorrectly accepted",
+                "Sample size is too small",
+                "Data is not normally distributed"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The gold standard for measuring validity is:",
+            "options": [
+                "Content validity",
+                "Construct validity",
+                "Criterion validity",
+                "Face validity"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which measure of central tendency is most affected by outliers?",
+            "options": [
+                "Mean",
+                "Median",
+                "Mode",
+                "Range"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The Hawthorne effect refers to:",
+            "options": [
+                "Selection bias",
+                "Measurement error",
+                "Behavior change due to observation",
+                "Confounding variables"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which research approach explores lived experiences?",
+            "options": [
+                "Experimental",
+                "Phenomenological",
+                "Descriptive",
+                "Correlational"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The confidence interval provides information about:",
+            "options": [
+                "Statistical significance",
+                "Clinical significance",
+                "Precision of estimate",
+                "Sample size adequacy"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which statistical test compares means of three or more groups?",
+            "options": [
+                "T-test",
+                "Chi-square",
+                "ANOVA",
+                "Correlation"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The purpose of randomization is to:",
+            "options": [
+                "Increase sample size",
+                "Control for confounding",
+                "Improve validity",
+                "Reduce costs"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which level of measurement allows for meaningful ratios?",
+            "options": [
+                "Nominal",
+                "Ordinal",
+                "Interval",
+                "Ratio"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "The null hypothesis typically states:",
+            "options": [
+                "There is a significant difference",
+                "There is no difference or relationship",
+                "The alternative is true",
+                "The study is valid"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which research design follows subjects over time?",
+            "options": [
+                "Cross-sectional",
+                "Longitudinal",
+                "Experimental",
+                "Descriptive"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The power of a statistical test refers to:",
+            "options": [
+                "Ability to detect true effect",
+                "Sample size calculation",
+                "Level of significance",
+                "Confidence interval width"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which bias occurs when subjects drop out systematically?",
+            "options": [
+                "Selection bias",
+                "Information bias",
+                "Attrition bias",
+                "Recall bias"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The most appropriate measure for skewed data is:",
+            "options": [
+                "Mean",
+                "Median",
+                "Standard deviation",
+                "Variance"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which research method uses open-ended questions?",
+            "options": [
+                "Quantitative",
+                "Qualitative",
+                "Experimental",
+                "Quasi-experimental"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The purpose of a pilot study is to:",
+            "options": [
+                "Test feasibility",
+                "Provide final results",
+                "Replace main study",
+                "Reduce costs"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which sampling method is most prone to bias?",
+            "options": [
+                "Simple random",
+                "Stratified random",
+                "Convenience",
+                "Systematic"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The standard deviation measures:",
+            "options": [
+                "Central tendency",
+                "Variability",
+                "Skewness",
+                "Correlation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which ethical principle requires informed consent?",
+            "options": [
+                "Beneficence",
+                "Justice",
+                "Autonomy",
+                "Non-maleficence"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The purpose of blinding in research is to:",
+            "options": [
+                "Increase sample size",
+                "Reduce bias",
+                "Improve validity",
+                "Control confounding"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which research design is best for rare outcomes?",
+            "options": [
+                "RCT",
+                "Cohort study",
+                "Case-control study",
+                "Cross-sectional study"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The correlation coefficient ranges from:",
+            "options": [
+                "0 to 1",
+                "-1 to +1",
+                "0 to 100",
+                "-100 to +100"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which factor increases statistical power?",
+            "options": [
+                "Smaller sample size",
+                "Lower significance level",
+                "Larger effect size",
+                "More variables"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The purpose of stratification is to:",
+            "options": [
+                "Increase sample size",
+                "Ensure representativeness",
+                "Reduce costs",
+                "Simplify analysis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which measure indicates internal consistency?",
+            "options": [
+                "Test-retest reliability",
+                "Cronbach's alpha",
+                "Content validity",
+                "Construct validity"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The primary advantage of meta-analysis is:",
+            "options": [
+                "Lower cost",
+                "Faster completion",
+                "Increased statistical power",
+                "Easier data collection"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which research approach uses inductive reasoning?",
+            "options": [
+                "Quantitative",
+                "Qualitative",
+                "Experimental",
+                "Quasi-experimental"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The purpose of a control group is to:",
+            "options": [
+                "Increase sample size",
+                "Provide comparison",
+                "Reduce costs",
+                "Improve recruitment"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which statistical test is used for categorical data?",
+            "options": [
+                "T-test",
+                "ANOVA",
+                "Chi-square",
+                "Regression"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The concept of saturation applies to:",
+            "options": [
+                "Sample size calculation",
+                "Qualitative data collection",
+                "Statistical significance",
+                "Randomization"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which bias affects recall of past events?",
+            "options": [
+                "Selection bias",
+                "Information bias",
+                "Recall bias",
+                "Attrition bias"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The purpose of peer review is to:",
+            "options": [
+                "Ensure quality",
+                "Increase citations",
+                "Reduce costs",
+                "Speed publication"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which research design has no control group?",
+            "options": [
+                "RCT",
+                "Quasi-experimental",
+                "Pre-experimental",
+                "True experimental"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The purpose of triangulation is to:",
+            "options": [
+                "Increase sample size",
+                "Enhance validity",
+                "Reduce costs",
+                "Speed analysis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which measure indicates external validity?",
+            "options": [
+                "Internal consistency",
+                "Generalizability",
+                "Reliability",
+                "Precision"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The purpose of coding in qualitative research is to:",
+            "options": [
+                "Organize data",
+                "Increase validity",
+                "Reduce bias",
+                "Improve reliability"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which research method uses numerical data?",
+            "options": [
+                "Ethnography",
+                "Phenomenology",
+                "Survey research",
+                "Grounded theory"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The purpose of a research proposal is to:",
+            "options": [
+                "Present results",
+                "Outline methodology",
+                "Discuss implications",
+                "Provide conclusions"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which sampling method uses predetermined intervals?",
+            "options": [
+                "Simple random",
+                "Stratified",
+                "Systematic",
+                "Cluster"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The purpose of a research question is to:",
+            "options": [
+                "Guide the study",
+                "Provide answers",
+                "Ensure funding",
+                "Meet requirements"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which factor affects generalizability?",
+            "options": [
+                "Sample representativeness",
+                "Statistical significance",
+                "Effect size",
+                "P-value"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The purpose of data cleaning is to:",
+            "options": [
+                "Increase sample size",
+                "Improve data quality",
+                "Reduce costs",
+                "Speed analysis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which research design compares groups at one time point?",
+            "options": [
+                "Longitudinal",
+                "Cross-sectional",
+                "Experimental",
+                "Cohort"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The purpose of hypothesis testing is to:",
+            "options": [
+                "Prove theories",
+                "Make inferences",
+                "Describe data",
+                "Generate ideas"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which measure indicates the strength of association?",
+            "options": [
+                "P-value",
+                "Confidence interval",
+                "Effect size",
+                "Standard error"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The purpose of randomization is to create:",
+            "options": [
+                "Larger samples",
+                "Comparable groups",
+                "Faster recruitment",
+                "Lower costs"
+            ],
+            "answer": 1
+        }
+    ],
+    "Medical Surgical Nursing": [
+        {
+            "question": "First-line therapy for STEMI within 90 minutes of first medical contact is:",
+            "options": [
+                "Fibrinolysis",
+                "PCI",
+                "CABG",
+                "Heparin only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "NSTEMI initial antithrombotic strategy includes:",
+            "options": [
+                "Aspirin + P2Y12 inhibitor + anticoagulant",
+                "Aspirin only",
+                "Warfarin",
+                "No antithrombotic"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "COPD acute exacerbation mainstay therapy:",
+            "options": [
+                "IV steroids + antibiotics (if indicated) + bronchodilators + oxygen titration",
+                "Diuretics",
+                "Only antibiotics",
+                "Only oxygen"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "ARDS ventilation strategy targets:",
+            "options": [
+                "Tidal volume 10–12 ml/kg",
+                "Low tidal volume 6 ml/kg IBW",
+                "High PEEP always >20",
+                "No PEEP"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "DKA fluids initial choice:",
+            "options": [
+                "D5W",
+                "0.9% normal saline",
+                "0.45% saline",
+                "Albumin"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "In DKA, insulin should be started after:",
+            "options": [
+                "Potassium assessment and replacement if low",
+                "Bicarbonate bolus",
+                "Antibiotics",
+                "Calcium"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Upper GI bleed initial test of choice for localization:",
+            "options": [
+                "Colonoscopy",
+                "EGD",
+                "CT abdomen",
+                "Tagged RBC scan"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Cirrhosis with ascites first-line diuretic regimen:",
+            "options": [
+                "Furosemide alone",
+                "Spironolactone ± furosemide",
+                "Thiazide only",
+                "No diuretics"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "SBP diagnostic paracentesis neutrophil cutoff:",
+            "options": [
+                ">50/µL",
+                ">100/µL",
+                ">250/µL",
+                ">500/µL"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "CKD anemia first-line therapy:",
+            "options": [
+                "Iron replacement if deficient, then ESA as indicated",
+                "Transfusion only",
+                "Vitamin C",
+                "Folate only"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Acute pancreatitis severity predictor includes:",
+            "options": [
+                "Hypocalcemia",
+                "Hypercalcemia",
+                "Bradycardia",
+                "Leukopenia"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Neutropenic fever initial management:",
+            "options": [
+                "Observe only",
+                "Immediate broad-spectrum IV antibiotics",
+                "Oral azithromycin",
+                "NSAIDs"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Hypertensive emergency priority:",
+            "options": [
+                "Rapid BP normalization",
+                "Gradual controlled BP reduction with IV agents",
+                "Oral meds only",
+                "No treatment"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Pulmonary embolism best initial imaging in stable patient:",
+            "options": [
+                "V/Q in all",
+                "CT pulmonary angiography",
+                "CXR",
+                "Echo"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Sepsis early management bundle includes:",
+            "options": [
+                "Fluids, early antibiotics, source control",
+                "Antivirals",
+                "Steroids only",
+                "No fluids"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Acute ischemic stroke within 4.5 hours candidate should receive:",
+            "options": [
+                "Aspirin only",
+                "IV thrombolysis if eligible",
+                "Heparin bolus",
+                "Warfarin"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Parkinson disease first-line symptomatic therapy in elderly with significant impairment:",
+            "options": [
+                "Amantadine",
+                "Levodopa/carbidopa",
+                "Selegiline",
+                "Bromocriptine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Myasthenic crisis respiratory failure—initial priority:",
+            "options": [
+                "Plasmapheresis immediately",
+                "Airway and ventilatory support",
+                "Steroids only",
+                "No ICU"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Thyroid storm management includes:",
+            "options": [
+                "Aspirin only",
+                "Beta-blocker, PTU/methimazole, iodine (after thionamide), steroids",
+                "Amiodarone",
+                "No therapy"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Hyperkalemia with ECG changes first immediate medication:",
+            "options": [
+                "Kayexalate",
+                "Calcium gluconate",
+                "Insulin only",
+                "Loop diuretic"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Trauma primary survey sequence:",
+            "options": [
+                "C-A-B-D-E",
+                "A-B-C-D-E",
+                "B-A-C-D-E",
+                "D-A-B-C-E"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Massive transfusion protocol RBC:plasma:platelet typical ratio:",
+            "options": [
+                "1:1:1",
+                "2:1:1",
+                "1:2:2",
+                "3:1:1"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Acute heart failure with pulmonary edema first-line meds:",
+            "options": [
+                "Fluids",
+                "IV diuretics + vasodilators as tolerated",
+                "Beta-blocker bolus",
+                "Steroids"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Atrial fibrillation stroke prevention assessed with:",
+            "options": [
+                "HAS-BLED only",
+                "CHA2DS2-VASc",
+                "TIMI",
+                "Wells score"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Anticoagulation bridging typically needed for:",
+            "options": [
+                "DOAC start",
+                "Warfarin initiation in VTE (until INR therapeutic)",
+                "Aspirin",
+                "Clopidogrel"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Pneumonia severity index for admission decision:",
+            "options": [
+                "CURB-65",
+                "CHA2DS2-VASc",
+                "APACHE II",
+                "SOFA"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Hospital-acquired pneumonia empiric therapy should cover:",
+            "options": [
+                "Atypicals only",
+                "MRSA and Pseudomonas risk-based",
+                "Anaerobes only",
+                "No coverage"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "DKA resolution criteria includes glucose <200 and:",
+            "options": [
+                "HCO3 ≥15, pH >7.3, anion gap closed",
+                "K+ <3",
+                "HCO3 <5",
+                "pH <7"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Upper GI bleed with varices acute therapy includes:",
+            "options": [
+                "PPI only",
+                "Octreotide + antibiotics + early endoscopic banding",
+                "Steroids",
+                "No antibiotics"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Acute kidney injury prerenal hallmark:",
+            "options": [
+                "FeNa >2%",
+                "FeNa <1%",
+                "Hematuria with casts",
+                "Proteinuria"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Neurogenic shock characterized by:",
+            "options": [
+                "Hypertension tachycardia",
+                "Hypotension bradycardia warm skin",
+                "Hypotension tachycardia cold clammy",
+                "Hypertension bradycardia cold"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Status asthmaticus ventilation risk to avoid:",
+            "options": [
+                "Dynamic hyperinflation (auto-PEEP)",
+                "Hypocapnia",
+                "Bradycardia",
+                "High RR"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Pulmonary edema on CXR typically shows:",
+            "options": [
+                "Kerley B lines",
+                "Cavitation",
+                "Pleural plaques",
+                "Hyperinflation only"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "AA gradient is useful to assess:",
+            "options": [
+                "Anemia",
+                "Oxygenation defect cause",
+                "Acidosis",
+                "Alkalosis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Hypercalcemia acute management includes:",
+            "options": [
+                "Fluid restriction",
+                "Aggressive IV fluids ± calcitonin",
+                "Beta-blockers",
+                "Insulin"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "SIADH labs show:",
+            "options": [
+                "Hypernatremia",
+                "Hyponatremia with low plasma osmolality and inappropriately concentrated urine",
+                "Hyperkalemia",
+                "Metabolic alkalosis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Anion gap metabolic acidosis causes include:",
+            "options": [
+                "MUDPILES",
+                "Metabolic alkalosis",
+                "Resp acidosis",
+                "Resp alkalosis"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Acute limb ischemia hallmark:",
+            "options": [
+                "Warm limb",
+                "6 Ps (pain, pallor, pulselessness, paresthesia, paralysis, poikilothermia)",
+                "Edema only",
+                "Hyperemia"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Wells score estimates probability of:",
+            "options": [
+                "Stroke",
+                "DVT/PE",
+                "ACS",
+                "Pneumonia"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "ARDS P/F ratio defines severity; moderate range is:",
+            "options": [
+                ">300",
+                "100–200",
+                "200–300",
+                "<100"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Beta-blockers are avoided acutely in:",
+            "options": [
+                "Uncomplicated HTN",
+                "Acute decompensated heart failure with shock",
+                "Stable angina",
+                "Rate control AF"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Pseudomembranous colitis organism:",
+            "options": [
+                "C. difficile",
+                "E. coli",
+                "Shigella",
+                "Salmonella"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Primary spontaneous pneumothorax initial management small stable:",
+            "options": [
+                "Immediate chest tube",
+                "Observation with O2",
+                "Thoracotomy",
+                "Antibiotics"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "ARDS hallmark on imaging:",
+            "options": [
+                "Lobar consolidation only",
+                "Diffuse bilateral alveolar infiltrates",
+                "Pleural calcification",
+                "Solitary cavitary lesion"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Postoperative DVT prophylaxis preferred in high risk without bleeding:",
+            "options": [
+                "No prophylaxis",
+                "LMWH + early ambulation",
+                "Aspirin only",
+                "Warfarin immediate"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Acute cholangitis initial therapy includes:",
+            "options": [
+                "Fluids + broad antibiotics ± urgent biliary drainage",
+                "Steroids only",
+                "Laxatives",
+                "Diet only"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Community-acquired bacterial meningitis empiric antibiotics (adult):",
+            "options": [
+                "Ampicillin alone",
+                "Vancomycin + ceftriaxone ± ampicillin",
+                "Doxycycline",
+                "Azithromycin"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Tumor lysis syndrome lab hallmark:",
+            "options": [
+                "Hypercalcemia",
+                "Hyperuricemia and hyperkalemia",
+                "Hyponatremia only",
+                "Alkalosis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Massive PE with shock first-line treatment if no contraindication:",
+            "options": [
+                "LMWH only",
+                "Systemic thrombolysis",
+                "Warfarin load",
+                "Aspirin"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "HHS (hyperosmolar hyperglycemic state) differs from DKA by:",
+            "options": [
+                "Ketoacidosis prominent",
+                "Severe hyperosmolarity and minimal ketosis",
+                "Low glucose",
+                "Metabolic alkalosis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "TTP first-line therapy:",
+            "options": [
+                "Platelet transfusion",
+                "Plasma exchange (PLEX)",
+                "Heparin",
+                "Aspirin only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Anaphylaxis refractory to IM epinephrine next step:",
+            "options": [
+                "IV epinephrine infusion and aggressive support",
+                "Steroids only",
+                "Antihistamines only",
+                "Observe"
+            ],
+            "answer": 0
+        }
+    ],
+    "Fundamentals of Nursing": [
+        {
+            "question": "The most accurate method to assess core body temperature is:",
+            "options": [
+                "Oral",
+                "Tympanic",
+                "Rectal",
+                "Axillary"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Hand hygiene with alcohol rub is NOT effective against:",
+            "options": [
+                "Influenza",
+                "Norovirus",
+                "Clostridioides difficile spores",
+                "COVID-19"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Droplet precautions require:",
+            "options": [
+                "N95",
+                "Surgical mask within 1–2 meters",
+                "Gloves only",
+                "No mask"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Airborne isolation examples include:",
+            "options": [
+                "TB, measles, varicella",
+                "Influenza",
+                "RSV",
+                "Hepatitis A"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Primary purpose of nursing process evaluation step:",
+            "options": [
+                "Collect data",
+                "Assess outcome achievement and modify plan",
+                "Diagnose",
+                "Document only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which position optimizes oxygenation in ARDS?",
+            "options": [
+                "Supine",
+                "Prone",
+                "Left lateral",
+                "Fowler"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Pressure injury prevention includes:",
+            "options": [
+                "Restrict fluids",
+                "Regular repositioning and support surfaces",
+                "No mobilization",
+                "High-sugar diet"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Correct order for donning PPE:",
+            "options": [
+                "Gloves, gown, mask, goggles",
+                "Gown, mask, goggles/face shield, gloves",
+                "Mask, gloves, gown",
+                "Gown last"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Restraints should be used:",
+            "options": [
+                "As first-line",
+                "After de-escalation fails and with orders/monitoring",
+                "At family request only",
+                "Indefinitely"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Enteral feeding aspiration risk reduced by:",
+            "options": [
+                "Supine position",
+                "Head-of-bed 30–45°",
+                "Flat bed",
+                "Deep sedation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Medication administration safety follows:",
+            "options": [
+                "3 rights",
+                "5 rights (or more)",
+                "No checks",
+                "Verbal orders only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Adult IM injection preferred site:",
+            "options": [
+                "Deltoid for large volume",
+                "Ventrogluteal for larger volumes",
+                "Dorsogluteal preferred",
+                "Forearm"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Isolation for C. difficile includes:",
+            "options": [
+                "Alcohol rub only",
+                "Soap-and-water handwash + contact precautions",
+                "Droplet only",
+                "Airborne only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Low Fowler is head elevation of:",
+            "options": [
+                "0–15°",
+                "15–30°",
+                "30–45°",
+                "45–60°"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Best method to verify NG tube placement initially:",
+            "options": [
+                "Air insufflation",
+                "pH testing and radiographic confirmation per policy",
+                "Auscultation only",
+                "Observation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "To prevent CAUTI, nurses should:",
+            "options": [
+                "Maintain closed drainage and aseptic insertion",
+                "Change catheter daily",
+                "Bag on bed rails",
+                "No pericare"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "SBAR stands for:",
+            "options": [
+                "Subjective, Background, Assessment, Response",
+                "Situation, Background, Assessment, Recommendation",
+                "Symptoms, Baseline, Actions, Results",
+                "Safety, Background, Assessment, Risk"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Effective patient education includes:",
+            "options": [
+                "Use of teach-back technique",
+                "Medical jargon",
+                "No assessment of literacy",
+                "One-way teaching"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "First action when a medication error is discovered:",
+            "options": [
+                "Blame staff",
+                "Assess the patient and notify provider per protocol",
+                "Hide the error",
+                "Ignore"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Fire response mnemonic RACE means:",
+            "options": [
+                "Run, Alert, Close, Exit",
+                "Rescue, Alarm, Confine, Extinguish/Evacuate",
+                "Report, Act, Check, Evacuate",
+                "Restrain, Alert, Close, Evacuate"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Pain assessment best practice includes:",
+            "options": [
+                "Use a validated scale and reassess after interventions",
+                "Ask family only",
+                "Assess once daily",
+                "Avoid documentation"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Falls prevention bundle includes:",
+            "options": [
+                "Bed in high position",
+                "Non-slip footwear, call bell within reach, frequent rounding",
+                "No signage",
+                "No assistive devices"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Medication reconciliation occurs:",
+            "options": [
+                "Admission, transfer, and discharge",
+                "Admission only",
+                "Discharge only",
+                "Never"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Best practice for blood transfusion verification:",
+            "options": [
+                "Single nurse check",
+                "Two qualified staff verify patient and product at bedside",
+                "Verbal confirmation",
+                "Family confirmation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Enteral feeding residual checks are:",
+            "options": [
+                "Never necessary",
+                "Per policy to reduce aspiration risk",
+                "Every 24 hours",
+                "Only at discharge"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Post-op incentive spirometry purpose:",
+            "options": [
+                "Increase atelectasis",
+                "Prevent atelectasis and improve ventilation",
+                "Sedation",
+                "Pain control"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Hypoglycemia bedside management in conscious patient:",
+            "options": [
+                "IM glucagon first",
+                "15–20 g fast-acting carbs, recheck in 15 minutes",
+                "Insulin bolus",
+                "Nothing"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Sterile field contamination occurs when:",
+            "options": [
+                "Hands above waist",
+                "Turning back on field",
+                "Minimal movement",
+                "Proper PPE"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Safe oxygen therapy for COPD exacerbation target SpO2:",
+            "options": [
+                "100%",
+                "88–92%",
+                "75–80%",
+                ">98% always"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Delirium prevention strategies include:",
+            "options": [
+                "Sleep disruption",
+                "Reorientation, mobilization, vision/hearing aids",
+                "Restraints routinely",
+                "Anticholinergics"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Urine specimen midstream collection reduces:",
+            "options": [
+                "Contamination",
+                "Volume",
+                "pH",
+                "Color"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Peripheral IV infiltration sign:",
+            "options": [
+                "Warmth and erythema streaking",
+                "Cool, swollen, blanching site with pain",
+                "Dry skin",
+                "No change"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Transdermal patch education includes:",
+            "options": [
+                "Cut patches to adjust dose",
+                "Rotate sites and avoid heat over patch",
+                "Double patch if pain",
+                "Remove only weekly always"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Postural hypotension prevention:",
+            "options": [
+                "Stand quickly",
+                "Rise slowly in stages, dangle legs",
+                "No fluids",
+                "Tight belts"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Enteric precautions require:",
+            "options": [
+                "Airborne room",
+                "Contact precautions and handwashing with soap/water",
+                "Droplet mask only",
+                "No PPE"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Fire extinguisher PASS stands for:",
+            "options": [
+                "Push, Aim, Sweep, Stop",
+                "Pull, Aim, Squeeze, Sweep",
+                "Press, Act, Spray, Sweep",
+                "Pull, Alert, Spray, Stop"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Delegation principle—RN should delegate:",
+            "options": [
+                "Nursing judgment",
+                "Tasks within assistive personnel scope with clear instructions",
+                "Care planning",
+                "Initial assessment"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Best site to check pulse in shock:",
+            "options": [
+                "Radial always",
+                "Carotid or femoral central pulses",
+                "Brachial only",
+                "Dorsalis pedis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Orthostatic vitals definition includes drop in SBP ≥:",
+            "options": [
+                "5 mmHg",
+                "20 mmHg",
+                "40 mmHg",
+                "60 mmHg"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "NG tube med administration best practice:",
+            "options": [
+                "Crush all extended-release",
+                "Hold feeding if required, flush before/after, give meds separately",
+                "Mix all meds together",
+                "No flush"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Safety with high-alert medications includes:",
+            "options": [
+                "No labeling",
+                "Independent double-checks per policy",
+                "Verbal only",
+                "Phone orders only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Insulin mixing rule (regular/NPH):",
+            "options": [
+                "Cloudy then clear",
+                "Clear (regular) before cloudy (NPH)",
+                "Mix all insulins",
+                "Any order"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Oral care in ventilated patients prevents:",
+            "options": [
+                "Skin tears",
+                "Ventilator-associated pneumonia",
+                "UTI",
+                "DVT"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Pulsus paradoxus assessment requires:",
+            "options": [
+                "ECG",
+                "BP measurement across respirations",
+                "ABG",
+                "CXR"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Medication high-risk abbreviations to avoid include:",
+            "options": [
+                "QD, U, IU",
+                "mg, mL",
+                "tab",
+                "caps"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "To prevent CLABSI, key nursing practice:",
+            "options": [
+                "Change dressing weekly only",
+                "Aseptic technique, chlorhexidine, daily necessity review",
+                "Open system",
+                "Handrub optional"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Oxygen humidification is essential when:",
+            "options": [
+                "Nasal cannula low flow",
+                "High-flow systems or prolonged use per policy",
+                "Room air",
+                "Never"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Enteral vs parenteral—enteral preferred because:",
+            "options": [
+                "More infections",
+                "Maintains gut integrity and fewer complications",
+                "More costly",
+                "Slower recovery"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What reduces catheter-associated UTI risk most?",
+            "options": [
+                "Daily change",
+                "Avoid unnecessary catheterization and remove early",
+                "Bag above bladder",
+                "No hygiene"
+            ],
+            "answer": 1
+        }
+    ],
+    "Human Anatomy": [
+        {
+            "question": "The rotator cuff does NOT include which muscle?",
+            "options": [
+                "Supraspinatus",
+                "Infraspinatus",
+                "Teres major",
+                "Subscapularis"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The anatomical snuffbox tenderness suggests injury to:",
+            "options": [
+                "Lunate",
+                "Scaphoid",
+                "Pisiform",
+                "Hamate"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Trendelenburg gait indicates weakness of:",
+            "options": [
+                "Gluteus maximus",
+                "Gluteus medius/minimus",
+                "Hamstrings",
+                "Quadriceps"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Nerve at risk in surgical neck of humerus fracture:",
+            "options": [
+                "Radial",
+                "Axillary",
+                "Ulnar",
+                "Median"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Foot drop due to injury of:",
+            "options": [
+                "Tibial nerve",
+                "Common peroneal nerve",
+                "Saphenous nerve",
+                "Obturator nerve"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Erb palsy involves roots:",
+            "options": [
+                "C5–C6",
+                "C7–C8",
+                "C8–T1",
+                "T1–T2"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Wrist extension is primarily by:",
+            "options": [
+                "Median nerve",
+                "Radial nerve",
+                "Ulnar nerve",
+                "Musculocutaneous"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Median nerve compression at wrist causes:",
+            "options": [
+                "Ulnar claw",
+                "Carpal tunnel syndrome",
+                "Radial palsy",
+                "Saturday night palsy"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The great saphenous vein drains into:",
+            "options": [
+                "Femoral vein",
+                "Popliteal vein",
+                "External iliac vein",
+                "Common iliac vein"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Rotator cuff primary abductor initiator:",
+            "options": [
+                "Deltoid",
+                "Supraspinatus",
+                "Infraspinatus",
+                "Teres minor"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The anterior cruciate ligament prevents:",
+            "options": [
+                "Anterior tibial translation",
+                "Posterior tibial translation",
+                "Varus",
+                "Valgus"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Foot eversion muscles innervated by:",
+            "options": [
+                "Tibial nerve",
+                "Superficial peroneal nerve",
+                "Deep peroneal nerve",
+                "Sural nerve"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which foramen transmits the maxillary nerve (V2)?",
+            "options": [
+                "Foramen ovale",
+                "Foramen rotundum",
+                "Foramen spinosum",
+                "Jugular foramen"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The portal triad includes:",
+            "options": [
+                "Portal vein, hepatic artery, bile duct",
+                "Hepatic vein, hepatic artery, bile duct",
+                "Portal vein, hepatic vein, bile duct",
+                "Cystic artery, cystic duct, portal vein"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The inguinal canal contains in females:",
+            "options": [
+                "Vas deferens",
+                "Round ligament of uterus",
+                "Spermatic cord",
+                "Ovarian ligament"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The pudendal nerve exits pelvis via:",
+            "options": [
+                "Greater sciatic foramen",
+                "Lesser sciatic foramen",
+                "Obturator canal",
+                "Inguinal canal"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The sinoatrial node artery most commonly arises from:",
+            "options": [
+                "Left circumflex",
+                "Right coronary artery",
+                "LAD",
+                "Ramus"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The thoracic duct drains into the venous system at:",
+            "options": [
+                "Right venous angle",
+                "Left venous angle",
+                "SVC",
+                "IVC"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The fracture of mid-shaft humerus injures:",
+            "options": [
+                "Median nerve",
+                "Radial nerve in radial groove",
+                "Ulnar nerve",
+                "Axillary nerve"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The pelvic floor major muscle group is:",
+            "options": [
+                "Coccygeus only",
+                "Levator ani",
+                "Piriformis",
+                "Obturator internus"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Carpal tunnel contents include:",
+            "options": [
+                "Ulnar artery",
+                "Median nerve and flexor tendons",
+                "Radial nerve",
+                "Brachial artery"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The popliteal fossa boundaries include biceps femoris and:",
+            "options": [
+                "Gracilis",
+                "Semimembranosus/semitendinosus",
+                "Sartorius",
+                "Rectus femoris"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The facial nerve exits skull via:",
+            "options": [
+                "Jugular foramen",
+                "Stylomastoid foramen",
+                "Foramen ovale",
+                "Foramen rotundum"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The thoracic outlet syndrome compresses typically:",
+            "options": [
+                "Median nerve only",
+                "Brachial plexus and subclavian vessels",
+                "Ulnar artery only",
+                "Vagus nerve"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Kidney relations—left kidney anteriorly contacts:",
+            "options": [
+                "Liver only",
+                "Spleen, stomach, pancreas tail, left colic flexure",
+                "Gallbladder",
+                "Appendix"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Portal hypertension portosystemic anastomoses include:",
+            "options": [
+                "Femoral-saphenous",
+                "Esophageal and paraumbilical veins",
+                "Basilic-cephalic",
+                "Radial-ulnar"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Median nerve motor function in hand primarily:",
+            "options": [
+                "Interossei",
+                "Thenar muscles (recurrent branch)",
+                "Adductor pollicis",
+                "Hypothenar only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The cervical plexus sensory branches form the:",
+            "options": [
+                "Ansa cervicalis",
+                "Lesser occipital, great auricular, transverse cervical, supraclavicular",
+                "Phrenic nerve",
+                "Brachial plexus"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The circle of Willis includes all EXCEPT:",
+            "options": [
+                "Anterior communicating",
+                "Posterior communicating",
+                "Middle cerebral artery",
+                "Anterior cerebral artery"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The bicipital aponeurosis protects:",
+            "options": [
+                "Median nerve only",
+                "Median nerve and brachial artery",
+                "Ulnar nerve",
+                "Radial nerve"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The adductor canal transmits:",
+            "options": [
+                "Femoral artery/vein and saphenous nerve",
+                "Obturator nerve only",
+                "Sciatic nerve",
+                "Popliteal artery"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Pain from diaphragm referred to shoulder via:",
+            "options": [
+                "C3–C5 phrenic nerve",
+                "T1",
+                "L2",
+                "S2"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The ureter constrictions are at:",
+            "options": [
+                "Pelvic brim only",
+                "Pelvi-ureteric junction, pelvic brim, vesicoureteric junction",
+                "Renal hilum",
+                "Iliac crest"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Blood supply of femoral head in adults mainly from:",
+            "options": [
+                "Obturator artery",
+                "Medial circumflex femoral artery",
+                "Popliteal artery",
+                "Iliolumbar"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Musculocutaneous nerve supplies:",
+            "options": [
+                "Triceps",
+                "Anterior compartment of arm (biceps, brachialis)",
+                "Forearm extensors",
+                "Hand intrinsics"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The pterion overlies:",
+            "options": [
+                "Middle meningeal artery",
+                "Internal carotid",
+                "Basilar artery",
+                "Anterior cerebral artery"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The lacrimal gland drains to:",
+            "options": [
+                "Inferior nasal meatus via nasolacrimal duct",
+                "Middle meatus",
+                "Sphenoethmoidal recess",
+                "Auditory tube"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Vertebral artery enters transverse foramen at:",
+            "options": [
+                "C2",
+                "C6",
+                "C4",
+                "C7"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Stellate ganglion is part of:",
+            "options": [
+                "Parasympathetic",
+                "Sympathetic chain (cervicothoracic)",
+                "Somatic motor",
+                "Enteric"
+            ],
+            "answer": 1
+        }
+    ],
+    "Human Physiology": [
+        {
+            "question": "The primary pacemaker of the heart is:",
+            "options": [
+                "AV node",
+                "SA node",
+                "Bundle of His",
+                "Purkinje fibers"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Normal resting heart rate is controlled by:",
+            "options": [
+                "Sympathetic nervous system",
+                "Parasympathetic nervous system",
+                "Both sympathetic and parasympathetic",
+                "Somatic nervous system"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The Frank-Starling mechanism describes:",
+            "options": [
+                "Heart rate regulation",
+                "Stroke volume regulation",
+                "Blood pressure control",
+                "Cardiac output calculation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Normal blood pH range is:",
+            "options": [
+                "7.25-7.35",
+                "7.35-7.45",
+                "7.45-7.55",
+                "7.30-7.40"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The primary buffer system in blood is:",
+            "options": [
+                "Phosphate buffer",
+                "Bicarbonate buffer",
+                "Protein buffer",
+                "Hemoglobin buffer"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Oxygen transport in blood is primarily by:",
+            "options": [
+                "Dissolved in plasma",
+                "Bound to hemoglobin",
+                "Bound to albumin",
+                "As bicarbonate"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The oxygen-hemoglobin dissociation curve shifts right with:",
+            "options": [
+                "Decreased temperature",
+                "Increased pH",
+                "Increased 2,3-DPG",
+                "Decreased CO2"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Normal tidal volume is approximately:",
+            "options": [
+                "300 mL",
+                "500 mL",
+                "700 mL",
+                "1000 mL"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The respiratory center is located in:",
+            "options": [
+                "Cerebral cortex",
+                "Medulla oblongata",
+                "Pons",
+                "Cerebellum"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Glomerular filtration rate is normally:",
+            "options": [
+                "60 mL/min",
+                "120 mL/min",
+                "180 mL/min",
+                "240 mL/min"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "ADH (antidiuretic hormone) acts on:",
+            "options": [
+                "Glomerulus",
+                "Proximal tubule",
+                "Collecting duct",
+                "Loop of Henle"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Normal body temperature is regulated by:",
+            "options": [
+                "Cerebral cortex",
+                "Hypothalamus",
+                "Medulla",
+                "Pituitary gland"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Insulin is produced by:",
+            "options": [
+                "Alpha cells",
+                "Beta cells",
+                "Delta cells",
+                "Acinar cells"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The primary action of insulin is to:",
+            "options": [
+                "Increase blood glucose",
+                "Decrease blood glucose",
+                "Increase protein synthesis",
+                "Decrease fat storage"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Growth hormone is released by:",
+            "options": [
+                "Hypothalamus",
+                "Anterior pituitary",
+                "Posterior pituitary",
+                "Adrenal cortex"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The fight-or-flight response is mediated by:",
+            "options": [
+                "Parasympathetic nervous system",
+                "Sympathetic nervous system",
+                "Somatic nervous system",
+                "Enteric nervous system"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Action potential propagation speed is fastest in:",
+            "options": [
+                "Unmyelinated fibers",
+                "Myelinated fibers",
+                "Smooth muscle",
+                "Cardiac muscle"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The blood-brain barrier is formed by:",
+            "options": [
+                "Astrocytes",
+                "Tight junctions between endothelial cells",
+                "Microglia",
+                "Oligodendrocytes"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Muscle contraction requires:",
+            "options": [
+                "Calcium and ATP",
+                "Sodium and potassium",
+                "Magnesium and phosphate",
+                "Iron and oxygen"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The sliding filament theory explains:",
+            "options": [
+                "Nerve conduction",
+                "Muscle contraction",
+                "Blood clotting",
+                "Hormone secretion"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Cardiac output equals:",
+            "options": [
+                "Heart rate × Blood pressure",
+                "Heart rate × Stroke volume",
+                "Stroke volume × Blood pressure",
+                "Heart rate × Cardiac index"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The QRS complex represents:",
+            "options": [
+                "Atrial depolarization",
+                "Ventricular depolarization",
+                "Atrial repolarization",
+                "Ventricular repolarization"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Blood pressure is highest in:",
+            "options": [
+                "Arteries",
+                "Arterioles",
+                "Capillaries",
+                "Veins"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The primary site of gas exchange is:",
+            "options": [
+                "Bronchi",
+                "Bronchioles",
+                "Alveoli",
+                "Trachea"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Surfactant is produced by:",
+            "options": [
+                "Type I pneumocytes",
+                "Type II pneumocytes",
+                "Alveolar macrophages",
+                "Clara cells"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The kidney's functional unit is:",
+            "options": [
+                "Glomerulus",
+                "Nephron",
+                "Collecting duct",
+                "Renal corpuscle"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Aldosterone regulates:",
+            "options": [
+                "Blood glucose",
+                "Sodium and potassium balance",
+                "Calcium levels",
+                "Protein synthesis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The thyroid gland produces:",
+            "options": [
+                "Insulin and glucagon",
+                "T3 and T4",
+                "Cortisol and aldosterone",
+                "Growth hormone and prolactin"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Parathyroid hormone increases:",
+            "options": [
+                "Blood calcium",
+                "Blood phosphate",
+                "Blood glucose",
+                "Blood sodium"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The digestive enzyme pepsin works in:",
+            "options": [
+                "Mouth",
+                "Stomach",
+                "Small intestine",
+                "Large intestine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Bile is produced by:",
+            "options": [
+                "Pancreas",
+                "Liver",
+                "Gallbladder",
+                "Small intestine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The primary site of nutrient absorption is:",
+            "options": [
+                "Stomach",
+                "Small intestine",
+                "Large intestine",
+                "Esophagus"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Red blood cells are produced in:",
+            "options": [
+                "Liver",
+                "Spleen",
+                "Bone marrow",
+                "Lymph nodes"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The lifespan of red blood cells is:",
+            "options": [
+                "30 days",
+                "60 days",
+                "120 days",
+                "180 days"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "White blood cells are primarily involved in:",
+            "options": [
+                "Oxygen transport",
+                "Immune defense",
+                "Blood clotting",
+                "Nutrient transport"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Platelets function in:",
+            "options": [
+                "Oxygen transport",
+                "Immune response",
+                "Blood clotting",
+                "pH regulation"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The menstrual cycle is controlled by:",
+            "options": [
+                "Thyroid hormones",
+                "Adrenal hormones",
+                "Reproductive hormones",
+                "Growth hormones"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Fertilization normally occurs in:",
+            "options": [
+                "Ovary",
+                "Uterus",
+                "Fallopian tube",
+                "Cervix"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The placenta produces:",
+            "options": [
+                "Insulin",
+                "hCG",
+                "Thyroid hormones",
+                "Growth hormone"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Body temperature regulation involves:",
+            "options": [
+                "Sweating and shivering",
+                "Vasodilation and vasoconstriction",
+                "Behavioral responses",
+                "All of the above"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "The sleep-wake cycle is controlled by:",
+            "options": [
+                "Pineal gland",
+                "Pituitary gland",
+                "Thyroid gland",
+                "Adrenal gland"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Memory formation involves:",
+            "options": [
+                "Cerebellum",
+                "Hippocampus",
+                "Medulla",
+                "Pons"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The autonomic nervous system controls:",
+            "options": [
+                "Voluntary movements",
+                "Involuntary functions",
+                "Sensory perception",
+                "Motor coordination"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Reflex arcs involve:",
+            "options": [
+                "Brain processing",
+                "Spinal cord processing",
+                "Conscious thought",
+                "Memory formation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The visual cortex is located in:",
+            "options": [
+                "Frontal lobe",
+                "Parietal lobe",
+                "Temporal lobe",
+                "Occipital lobe"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Hearing is processed in:",
+            "options": [
+                "Frontal lobe",
+                "Parietal lobe",
+                "Temporal lobe",
+                "Occipital lobe"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The sense of balance is controlled by:",
+            "options": [
+                "Cochlea",
+                "Vestibular system",
+                "Visual system",
+                "Proprioceptors"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Taste buds detect:",
+            "options": [
+                "Sweet, sour, salty, bitter",
+                "Sweet, sour, salty, bitter, umami",
+                "Only sweet and salty",
+                "Only sour and bitter"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The olfactory system detects:",
+            "options": [
+                "Sound waves",
+                "Light waves",
+                "Chemical molecules",
+                "Pressure changes"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Pain perception involves:",
+            "options": [
+                "Nociceptors",
+                "Mechanoreceptors",
+                "Thermoreceptors",
+                "Chemoreceptors"
+            ],
+            "answer": 0
+        }
+    ],
+    "Microbiology": [
+        {
+            "question": "Which sterilization method is best for heat-sensitive instruments?",
+            "options": [
+                "Autoclaving",
+                "Dry heat",
+                "Ethylene oxide gas",
+                "Boiling"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The most common cause of healthcare-associated infections is:",
+            "options": [
+                "Staphylococcus aureus",
+                "Escherichia coli",
+                "Clostridioides difficile",
+                "Pseudomonas aeruginosa"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "MRSA stands for:",
+            "options": [
+                "Methicillin-resistant Staphylococcus aureus",
+                "Multiple-resistant Streptococcus aureus",
+                "Methicillin-resistant Streptococcus aureus",
+                "Multiple-resistant Staphylococcus aureus"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The most effective hand hygiene method against C. diff spores is:",
+            "options": [
+                "Alcohol-based hand rub",
+                "Soap and water",
+                "Chlorhexidine",
+                "Iodine solution"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which organism causes tuberculosis?",
+            "options": [
+                "Mycobacterium tuberculosis",
+                "Streptococcus pneumoniae",
+                "Haemophilus influenzae",
+                "Legionella pneumophila"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The normal flora of the skin includes:",
+            "options": [
+                "Staphylococcus epidermidis",
+                "Escherichia coli",
+                "Streptococcus pyogenes",
+                "Pseudomonas aeruginosa"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which virus causes hepatitis B?",
+            "options": [
+                "RNA virus",
+                "DNA virus",
+                "Retrovirus",
+                "Prion"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The most common cause of urinary tract infections is:",
+            "options": [
+                "Staphylococcus aureus",
+                "Escherichia coli",
+                "Enterococcus faecalis",
+                "Klebsiella pneumoniae"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which antibiotic class inhibits cell wall synthesis?",
+            "options": [
+                "Aminoglycosides",
+                "Beta-lactams",
+                "Macrolides",
+                "Fluoroquinolones"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The gram stain differentiates bacteria based on:",
+            "options": [
+                "Cell shape",
+                "Cell wall composition",
+                "Metabolic activity",
+                "Oxygen requirements"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which organism is associated with food poisoning from poultry?",
+            "options": [
+                "Salmonella",
+                "Clostridium botulinum",
+                "Staphylococcus aureus",
+                "Bacillus cereus"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The incubation period for hepatitis A is:",
+            "options": [
+                "1-2 weeks",
+                "2-7 weeks",
+                "8-12 weeks",
+                "6 months"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which organism causes whooping cough?",
+            "options": [
+                "Bordetella pertussis",
+                "Corynebacterium diphtheriae",
+                "Streptococcus pneumoniae",
+                "Haemophilus influenzae"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The most common cause of bacterial meningitis in adults is:",
+            "options": [
+                "Haemophilus influenzae",
+                "Streptococcus pneumoniae",
+                "Neisseria meningitidis",
+                "Listeria monocytogenes"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which fungal infection commonly affects immunocompromised patients?",
+            "options": [
+                "Candida albicans",
+                "Aspergillus fumigatus",
+                "Cryptococcus neoformans",
+                "All of the above"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "The reservoir for Legionella pneumophila is:",
+            "options": [
+                "Humans",
+                "Animals",
+                "Water systems",
+                "Soil"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Which virus causes infectious mononucleosis?",
+            "options": [
+                "Cytomegalovirus",
+                "Epstein-Barr virus",
+                "Herpes simplex virus",
+                "Varicella-zoster virus"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The most common cause of gastroenteritis in children is:",
+            "options": [
+                "Rotavirus",
+                "Norovirus",
+                "Adenovirus",
+                "Astrovirus"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which organism causes toxic shock syndrome?",
+            "options": [
+                "Staphylococcus aureus",
+                "Streptococcus pyogenes",
+                "Both A and B",
+                "Clostridium perfringens"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The mechanism of action of vancomycin is:",
+            "options": [
+                "Protein synthesis inhibition",
+                "Cell wall synthesis inhibition",
+                "DNA synthesis inhibition",
+                "Cell membrane disruption"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which organism is associated with rose gardener's disease?",
+            "options": [
+                "Sporothrix schenckii",
+                "Histoplasma capsulatum",
+                "Blastomyces dermatitidis",
+                "Coccidioides immitis"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The most common cause of pneumonia in healthy adults is:",
+            "options": [
+                "Streptococcus pneumoniae",
+                "Haemophilus influenzae",
+                "Mycoplasma pneumoniae",
+                "Legionella pneumophila"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which virus is associated with cervical cancer?",
+            "options": [
+                "Human papillomavirus",
+                "Herpes simplex virus",
+                "Cytomegalovirus",
+                "Epstein-Barr virus"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The most common cause of bacterial endocarditis is:",
+            "options": [
+                "Staphylococcus aureus",
+                "Streptococcus viridans",
+                "Enterococcus faecalis",
+                "Staphylococcus epidermidis"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which organism causes Q fever?",
+            "options": [
+                "Rickettsia rickettsii",
+                "Coxiella burnetii",
+                "Ehrlichia chaffeensis",
+                "Anaplasma phagocytophilum"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The most effective disinfectant against norovirus is:",
+            "options": [
+                "Alcohol",
+                "Chlorine bleach",
+                "Quaternary ammonium compounds",
+                "Hydrogen peroxide"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which organism causes cat scratch disease?",
+            "options": [
+                "Bartonella henselae",
+                "Pasteurella multocida",
+                "Capnocytophaga canimorsus",
+                "Francisella tularensis"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The most common cause of traveler's diarrhea is:",
+            "options": [
+                "Enterotoxigenic E. coli",
+                "Shigella",
+                "Campylobacter jejuni",
+                "Salmonella"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which organism is associated with Lyme disease?",
+            "options": [
+                "Borrelia burgdorferi",
+                "Rickettsia rickettsii",
+                "Ehrlichia chaffeensis",
+                "Babesia microti"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "The most common cause of viral encephalitis is:",
+            "options": [
+                "Herpes simplex virus",
+                "West Nile virus",
+                "Eastern equine encephalitis virus",
+                "La Crosse virus"
+            ],
+            "answer": 0
+        }
+    ],
+    "Sociology": [
+        {
+            "question": "Social determinants of health include all EXCEPT:",
+            "options": [
+                "Education",
+                "Income",
+                "Genetic mutations",
+                "Neighborhood environment"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Health disparities are primarily caused by:",
+            "options": [
+                "Genetic differences",
+                "Individual choices",
+                "Social and economic inequalities",
+                "Access to healthcare only"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "The concept of cultural competence in healthcare refers to:",
+            "options": [
+                "Speaking multiple languages",
+                "Understanding and respecting cultural differences",
+                "Treating all patients the same",
+                "Following hospital protocols"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Social support has been shown to:",
+            "options": [
+                "Improve health outcomes",
+                "Reduce stress",
+                "Enhance immune function",
+                "All of the above"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "The sick role concept was developed by:",
+            "options": [
+                "Talcott Parsons",
+                "Erving Goffman",
+                "Max Weber",
+                "Emile Durkheim"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Health literacy refers to:",
+            "options": [
+                "Ability to read medical texts",
+                "Understanding health information and making informed decisions",
+                "Knowledge of anatomy",
+                "Medical vocabulary"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The medicalization of society refers to:",
+            "options": [
+                "Increased access to healthcare",
+                "Defining social problems as medical issues",
+                "More medical schools",
+                "Better medical technology"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Social capital in health refers to:",
+            "options": [
+                "Financial resources",
+                "Social networks and community connections",
+                "Educational achievements",
+                "Healthcare insurance"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The inverse care law states that:",
+            "options": [
+                "More care leads to better health",
+                "Those who need care most get it least",
+                "Healthcare costs increase with age",
+                "Prevention is better than treatment"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Stigma in healthcare can lead to:",
+            "options": [
+                "Delayed care seeking",
+                "Poor treatment adherence",
+                "Social isolation",
+                "All of the above"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "The social gradient in health refers to:",
+            "options": [
+                "Age-related health changes",
+                "Relationship between social position and health",
+                "Gender differences in health",
+                "Racial health disparities"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Community-based participatory research involves:",
+            "options": [
+                "Researchers only",
+                "Community members as partners",
+                "Government agencies",
+                "Healthcare providers only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The concept of intersectionality in health considers:",
+            "options": [
+                "Multiple overlapping identities",
+                "Single risk factors",
+                "Individual behaviors only",
+                "Genetic factors only"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Social cohesion in communities is associated with:",
+            "options": [
+                "Better health outcomes",
+                "Lower crime rates",
+                "Increased social support",
+                "All of the above"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "The fundamental cause theory suggests that:",
+            "options": [
+                "Diseases have single causes",
+                "Social conditions are root causes of health disparities",
+                "Individual behavior is most important",
+                "Genetics determine health"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Cultural relativism in healthcare means:",
+            "options": [
+                "All cultures are equal",
+                "Understanding health practices within cultural context",
+                "Imposing Western medical practices",
+                "Ignoring cultural differences"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The social model of disability emphasizes:",
+            "options": [
+                "Medical treatment",
+                "Individual limitations",
+                "Social barriers and discrimination",
+                "Genetic causes"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Health promotion focuses on:",
+            "options": [
+                "Disease treatment",
+                "Individual behavior change",
+                "Creating supportive environments",
+                "Both B and C"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "The concept of empowerment in health includes:",
+            "options": [
+                "Individual control",
+                "Community participation",
+                "Political action",
+                "All of the above"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Social epidemiology studies:",
+            "options": [
+                "Disease patterns only",
+                "Social distribution of health and disease",
+                "Individual risk factors",
+                "Genetic epidemiology"
+            ],
+            "answer": 1
+        }
+    ],
+    "Nutrition": [
+        {
+            "question": "Which vitamin deficiency causes night blindness?",
+            "options": [
+                "Vitamin A",
+                "Vitamin B1",
+                "Vitamin C",
+                "Vitamin K"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Pellagra is due to deficiency of:",
+            "options": [
+                "Thiamine",
+                "Niacin (Vitamin B3)",
+                "Riboflavin",
+                "Pyridoxine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Beri-beri is caused by deficiency of:",
+            "options": [
+                "Thiamine (B1)",
+                "Riboflavin",
+                "Niacin",
+                "Folate"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Megaloblastic anemia is classically due to:",
+            "options": [
+                "Vitamin C deficiency",
+                "Vitamin B12 or folate deficiency",
+                "Vitamin A deficiency",
+                "Zinc deficiency"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Scurvy is deficiency of:",
+            "options": [
+                "Vitamin D",
+                "Vitamin C",
+                "Vitamin E",
+                "Vitamin K"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Rickets/osteomalacia due to:",
+            "options": [
+                "Vitamin A deficiency",
+                "Vitamin D deficiency",
+                "Vitamin K deficiency",
+                "Iron deficiency"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which vitamin increases iron absorption?",
+            "options": [
+                "Vitamin A",
+                "Vitamin C",
+                "Vitamin D",
+                "Vitamin E"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Kwashiorkor hallmark:",
+            "options": [
+                "Severe wasting without edema",
+                "Edema with protein deficiency",
+                "Obesity",
+                "Hypertrichosis"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Marasmus hallmark:",
+            "options": [
+                "Edema prominent",
+                "Severe wasting with energy deficiency",
+                "Hyperpigmentation",
+                "Goiter"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Essential fatty acids include:",
+            "options": [
+                "Palmitic acid",
+                "Linoleic and alpha-linolenic acids",
+                "Stearic acid",
+                "Oleic acid"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which mineral deficiency causes microcytic anemia?",
+            "options": [
+                "Calcium",
+                "Iron",
+                "Selenium",
+                "Chromium"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Goiter endemic areas are associated with deficiency of:",
+            "options": [
+                "Iron",
+                "Iodine",
+                "Zinc",
+                "Selenium"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Zinc deficiency classic finding:",
+            "options": [
+                "Night blindness",
+                "Periorificial dermatitis and alopecia",
+                "Tetany",
+                "Peripheral neuropathy"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Vitamin K is required for gamma-carboxylation of factors:",
+            "options": [
+                "I, II, V, X",
+                "II, VII, IX, X",
+                "VIII, IX, XI, XII",
+                "II, V, VII, VIII"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Vitamin A toxicity can cause:",
+            "options": [
+                "Night blindness",
+                "Pseudotumor cerebri",
+                "Scurvy",
+                "Rickets"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Refeeding syndrome hallmark electrolyte abnormality:",
+            "options": [
+                "Hyperkalemia",
+                "Hypophosphatemia",
+                "Hypernatremia",
+                "Hypocalcemia always"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "BMI category for obesity (kg/m2):",
+            "options": [
+                ">=25",
+                ">=30",
+                ">=35",
+                ">=40"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Glycemic index compares:",
+            "options": [
+                "Protein content",
+                "Blood glucose response vs reference food",
+                "Fat content",
+                "Fiber content"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Complete protein source among plant foods:",
+            "options": [
+                "Rice",
+                "Soy",
+                "Cassava",
+                "Corn"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Exclusive breastfeeding recommended for first:",
+            "options": [
+                "2 months",
+                "4 months",
+                "6 months",
+                "12 months"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Daily iron requirement for pregnant women (approx):",
+            "options": [
+                "5 mg",
+                "10 mg",
+                "27 mg",
+                "60 mg"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Folate supplementation preconception recommended dose (low risk):",
+            "options": [
+                "100 mcg/day",
+                "200 mcg/day",
+                "400 mcg/day",
+                "4 mg/day"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Omega-3 fatty acid best source:",
+            "options": [
+                "Red meat",
+                "Fatty fish (EPA/DHA)",
+                "White rice",
+                "Butter"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Vitamin B12 is primarily found in:",
+            "options": [
+                "Fruits",
+                "Animal products",
+                "Vegetable oils",
+                "Nuts"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which deficiency causes glossitis and angular cheilitis?",
+            "options": [
+                "Riboflavin (B2)",
+                "Vitamin A",
+                "Vitamin K",
+                "Vitamin D"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Primary antioxidant vitamins include:",
+            "options": [
+                "A, C, E",
+                "B1, B6, B12",
+                "D, K",
+                "Niacin only"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Which mineral excess causes fluorosis?",
+            "options": [
+                "Iodine",
+                "Fluoride",
+                "Selenium",
+                "Copper"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Calcium absorption is enhanced by:",
+            "options": [
+                "Phytates",
+                "Vitamin D",
+                "Oxalates",
+                "High fiber"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which vitamin deficiency leads to peripheral neuropathy in isoniazid use?",
+            "options": [
+                "B1",
+                "B6 (pyridoxine)",
+                "B12",
+                "B2"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Thyroid hormone synthesis requires:",
+            "options": [
+                "Calcium",
+                "Iodine and tyrosine",
+                "Iron",
+                "Magnesium"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which vitamin is teratogenic in excess during pregnancy?",
+            "options": [
+                "Vitamin C",
+                "Vitamin A (retinoids)",
+                "Vitamin E",
+                "Vitamin K"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Sarcopenia in elderly is best mitigated by:",
+            "options": [
+                "High sugar diet",
+                "Adequate protein + resistance exercise",
+                "Bed rest",
+                "Low protein diet"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which nutrient is critical for neural tube closure?",
+            "options": [
+                "Vitamin C",
+                "Folate",
+                "Vitamin E",
+                "Zinc"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Cachexia differs from starvation by:",
+            "options": [
+                "Increased appetite",
+                "Inflammation-driven catabolism resistant to nutrition alone",
+                "Fat gain",
+                "No muscle loss"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Vitamin D activation requires hydroxylation in:",
+            "options": [
+                "Spleen then liver",
+                "Liver then kidney",
+                "Pancreas then kidney",
+                "Gut then spleen"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "RDA for protein in adults (approx g/kg/day):",
+            "options": [
+                "0.2",
+                "0.8",
+                "1.5",
+                "2.5"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which mineral deficiency is linked to cardiomyopathy (Keshan disease)?",
+            "options": [
+                "Iodine",
+                "Selenium",
+                "Zinc",
+                "Chromium"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Niacin can be synthesized from:",
+            "options": [
+                "Tyrosine",
+                "Tryptophan",
+                "Phenylalanine",
+                "Leucine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which vitamin deficiency causes hemolytic anemia in preterm infants?",
+            "options": [
+                "Vitamin A",
+                "Vitamin E",
+                "Vitamin K",
+                "Vitamin D"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Dietary fiber benefits include:",
+            "options": [
+                "Hyperglycemia",
+                "Improved glycemic control and bowel function",
+                "Increased LDL",
+                "Constipation"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "MCT oil is absorbed via:",
+            "options": [
+                "Lymphatics",
+                "Portal vein directly",
+                "Colon only",
+                "Skin"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which deficiency causes impaired wound healing?",
+            "options": [
+                "Zinc",
+                "Sodium",
+                "Chloride",
+                "Fluoride"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Vitamin A is essential for:",
+            "options": [
+                "Coagulation",
+                "Vision and epithelial integrity",
+                "Bone mineralization only",
+                "Nerve conduction"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Micronutrient fortification to prevent NTDs targets:",
+            "options": [
+                "Vitamin A",
+                "Folate",
+                "Vitamin C",
+                "Vitamin E"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which vitamin is required for collagen hydroxylation?",
+            "options": [
+                "Vitamin C",
+                "Vitamin D",
+                "Vitamin K",
+                "Vitamin A"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Iron absorption is inhibited by:",
+            "options": [
+                "Vitamin C",
+                "Phytates and polyphenols",
+                "Heme intake",
+                "Acidic pH"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which fatty acids are cardioprotective?",
+            "options": [
+                "Trans fats",
+                "Omega-3 PUFAs",
+                "Saturated fats",
+                "None"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which deficiency leads to Wernicke-Korsakoff?",
+            "options": [
+                "B3",
+                "B1 (thiamine)",
+                "B6",
+                "B12"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Major storage form of vitamin A:",
+            "options": [
+                "Retinal",
+                "Retinol esters in liver",
+                "Retinoic acid in skin",
+                "Circulating retinol-binding protein"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Primary source of vitamin K in adults:",
+            "options": [
+                "Fruit",
+                "Gut bacteria and leafy greens",
+                "Meat only",
+                "Milk only"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which mineral deficiency causes taste disturbance (dysgeusia)?",
+            "options": [
+                "Calcium",
+                "Zinc",
+                "Iron",
+                "Iodine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Lactose intolerance mechanism:",
+            "options": [
+                "IgE mediated",
+                "Lactase deficiency leading to osmotic diarrhea",
+                "Protein allergy",
+                "Fat malabsorption"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Hypervitaminosis D leads to:",
+            "options": [
+                "Hypocalcemia",
+                "Hypercalcemia and nephrocalcinosis",
+                "Hypophosphatemia only",
+                "Anemia"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which vitamin deficiency causes cheilosis and corneal vascularization?",
+            "options": [
+                "B2 (riboflavin)",
+                "B3",
+                "B6",
+                "B12"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "GLUT4 is insulin-responsive in:",
+            "options": [
+                "Brain",
+                "Skeletal muscle and adipose tissue",
+                "Liver only",
+                "Intestine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Which amino acid is conditionally essential during stress?",
+            "options": [
+                "Glycine",
+                "Arginine",
+                "Alanine",
+                "Serine"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Macrocytosis with neurologic deficits suggests deficiency of:",
+            "options": [
+                "Folate only",
+                "Vitamin B12",
+                "Iron",
+                "Vitamin C"
+            ],
+            "answer": 1
+        }
+    ]
+}
