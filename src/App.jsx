@@ -18,11 +18,6 @@ const SUBJECTS = [
     "Nutrition"
 ]
 
-const DIFFICULTY_LEVELS = {
-    easy: { name: 'Easy', timePerQuestion: 60, color: 'easy' },
-    medium: { name: 'Medium', timePerQuestion: 60, color: 'medium' },
-    hard: { name: 'Hard', timePerQuestion: 60, color: 'hard' }
-}
 
 // Local storage helpers
 const getStoredStats = () => {
@@ -112,64 +107,6 @@ function Notification({ message, type, onClose }) {
     )
 }
 
-// Explanation Modal component
-function ExplanationModal({ question, isOpen, onClose }) {
-    useEffect(() => {
-        const handleEscape = (e) => {
-            if (e.key === 'Escape') {
-                onClose()
-            }
-        }
-        
-        if (isOpen) {
-            document.addEventListener('keydown', handleEscape)
-            document.body.style.overflow = 'hidden'
-        }
-        
-        return () => {
-            document.removeEventListener('keydown', handleEscape)
-            document.body.style.overflow = 'unset'
-        }
-    }, [isOpen, onClose])
-
-    if (!isOpen || !question) return null
-
-    const handleBackdropClick = (e) => {
-        if (e.target === e.currentTarget) {
-            onClose()
-        }
-    }
-
-    return (
-        <div className="explanation-modal" onClick={handleBackdropClick}>
-            <div className="explanation-content">
-                <div className="explanation-header">
-                    <h3 className="explanation-title">💡 Explanation</h3>
-                    <button className="modal-close" onClick={onClose}>×</button>
-                </div>
-                
-                <div className="explanation-question">
-                    <strong>Question:</strong> {question.question}
-                </div>
-                
-                <div className="explanation-answer">
-                    <strong>Correct Answer:</strong> {question.options[question.answer]}
-                </div>
-                
-                <div className="explanation-text">
-                    <strong>Explanation:</strong>
-                    <p>{question.explanation || "No explanation available for this question yet. We're working on adding more detailed explanations!"}</p>
-                </div>
-                
-                <div className="explanation-actions">
-                    <button className="btn primary" onClick={onClose}>
-                        Got it! 👍
-                    </button>
-                </div>
-            </div>
-        </div>
-    )
-}
 
 // Statistics component
 function Statistics({ stats, onViewBookmarks }) {
@@ -340,34 +277,21 @@ function BookmarkedReview({ onBack }) {
 }
 
 function SubjectPicker({ onPick, onViewBookmarks }) {
-    const [difficulty, setDifficulty] = useState('medium')
     const [stats] = useState(getStoredStats())
 
     return (
         <div className="card">
             <h1 className="title">Nursing MCQ Practice</h1>
-            <p className="subtitle">Select difficulty and subject to begin • 60 seconds per question</p>
+            <p className="subtitle">Select a subject to begin • 60 seconds per question</p>
             
             <Statistics stats={stats} onViewBookmarks={onViewBookmarks} />
-            
-            <div className="difficulty-selector">
-                {Object.entries(DIFFICULTY_LEVELS).map(([key, level]) => (
-                    <button
-                        key={key}
-                        className={`difficulty-btn ${level.color} ${difficulty === key ? 'active' : ''}`}
-                        onClick={() => setDifficulty(key)}
-                    >
-                        {level.name} Level
-                    </button>
-                ))}
-            </div>
             
             <div className="subjects-grid">
                 {SUBJECTS.map((s) => (
                     <button 
                         key={s} 
                         className="btn subject" 
-                        onClick={() => onPick(s, difficulty)}
+                        onClick={() => onPick(s)}
                     >
                         {s}
                     </button>
@@ -377,12 +301,11 @@ function SubjectPicker({ onPick, onViewBookmarks }) {
     )
 }
 
-function Quiz({ subject, difficulty, onRestart }) {
+function Quiz({ subject, onRestart }) {
     const [allQuestions, setAllQuestions] = useState([])
     const [seed, setSeed] = useState(() => Math.random())
     const [stats, setStats] = useState(getStoredStats())
     const [questionUpdateNotification, setQuestionUpdateNotification] = useState(null)
-    const [showExplanation, setShowExplanation] = useState(false)
 
     // Load questions from service
     useEffect(() => {
@@ -513,7 +436,6 @@ function Quiz({ subject, difficulty, onRestart }) {
     }
 
     function nextQuestion() {
-        setShowExplanation(false) // Hide explanation when moving to next question
         if (currentInRound + 1 < total) {
             setCurrentInRound((c) => c + 1)
             setSelectedIndex(null)
@@ -526,7 +448,6 @@ function Quiz({ subject, difficulty, onRestart }) {
     }
 
     function previousQuestion() {
-        setShowExplanation(false) // Hide explanation when moving to previous question
         if (currentInRound > 0) {
             setCurrentInRound((c) => c - 1)
             // Restore previous answer if it exists
@@ -548,10 +469,17 @@ function Quiz({ subject, difficulty, onRestart }) {
         setTimerActive(true)
     }
 
-    function nextRound() {
+    async function nextRound() {
+        // First, try to fetch new questions from external APIs
+        await questionService.collectQuestionsForSubject(subject)
+        
+        // Reload questions to include any new ones
+        const updatedQuestions = questionService.getQuestions(subject)
+        setAllQuestions(updatedQuestions)
+        
         // Advance to the next non-overlapping 50-question block. If we reach the end, reshuffle.
         const nextStart = chunkStart + ROUND_SIZE
-        if (allQuestions.length >= ROUND_SIZE && nextStart < order.length) {
+        if (updatedQuestions.length >= ROUND_SIZE && nextStart < order.length) {
             setChunkStart(nextStart)
         } else {
             // reshuffle and start over
@@ -613,7 +541,7 @@ function Quiz({ subject, difficulty, onRestart }) {
     }
 
     return (
-        <div className="card">
+        <div className="card quiz-card">
             {questionUpdateNotification && (
                 <Notification
                     message={questionUpdateNotification.message}
@@ -691,26 +619,6 @@ function Quiz({ subject, difficulty, onRestart }) {
                 </button>
                 <button className="btn" onClick={onRestart}>Change subject</button>
             </div>
-
-            {/* Show explanation button only after answering */}
-            {selectedIndex !== null && q && (
-                <div className="explanation-section">
-                    <button 
-                        className="btn explanation-btn" 
-                        onClick={() => setShowExplanation(true)}
-                        title="Learn more about this answer"
-                    >
-                        💡 See Explanation
-                    </button>
-                </div>
-            )}
-
-            {/* Explanation Modal */}
-            <ExplanationModal 
-                question={q}
-                isOpen={showExplanation}
-                onClose={() => setShowExplanation(false)}
-            />
         </div>
     )
 }
@@ -729,9 +637,14 @@ export default function App() {
     const [currentView, setCurrentView] = useState('subjects') // 'subjects', 'quiz', 'bookmarks'
     const [quizConfig, setQuizConfig] = useState(null)
     
-    const handleSubjectPick = (subject, difficulty) => {
-        setQuizConfig({ subject, difficulty })
+    const handleSubjectPick = (subject) => {
+        setQuizConfig({ subject })
         setCurrentView('quiz')
+        
+        // Scroll to top when starting quiz to ensure question is visible
+        setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }, 100)
     }
     
     const handleRestart = () => {
@@ -758,7 +671,6 @@ export default function App() {
             {currentView === 'quiz' && quizConfig && (
                 <Quiz 
                     subject={quizConfig.subject}
-                    difficulty={quizConfig.difficulty}
                     onRestart={handleRestart} 
                 />
             )}

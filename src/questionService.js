@@ -3,8 +3,8 @@ import questionsData from './questions.json'
 
 // Configuration for question collection
 const QUESTION_CONFIG = {
-    MIN_QUESTIONS_THRESHOLD: 10, // Trigger collection when below this number
-    BATCH_SIZE: 20, // Number of questions to fetch at once
+    MIN_QUESTIONS_THRESHOLD: 15, // Trigger collection when below this number
+    BATCH_SIZE: 30, // Number of questions to fetch at once
     MAX_RETRIES: 3,
     RETRY_DELAY: 1000, // ms
 }
@@ -18,15 +18,15 @@ const QUESTION_SOURCES = [
         active: true
     },
     {
-        name: 'QuizAPI',
-        url: 'https://quizapi.io/api/v1/questions',
-        category: 'medical',
-        active: true
-    },
-    {
         name: 'Trivia',
         url: 'https://the-trivia-api.com/api/questions',
         category: 'science',
+        active: true
+    },
+    {
+        name: 'Fallback',
+        url: 'fallback',
+        category: 'generated',
         active: true
     }
 ]
@@ -177,11 +177,11 @@ class QuestionService {
         try {
             // Try different API endpoints based on source
             if (source.name === 'OpenTDB') {
-                return await this.fetchFromOpenTDB(keywords)
-            } else if (source.name === 'QuizAPI') {
-                return await this.fetchFromQuizAPI(keywords)
+                return await this.fetchFromOpenTDB(keywords, subject)
             } else if (source.name === 'Trivia') {
-                return await this.fetchFromTriviaAPI(keywords)
+                return await this.fetchFromTriviaAPI(keywords, subject)
+            } else if (source.name === 'Fallback') {
+                return this.generateFallbackQuestions(subject)
             }
         } catch (error) {
             console.warn(`Error fetching from ${source.name}:`, error)
@@ -191,39 +191,49 @@ class QuestionService {
     }
 
     // Fetch from Open Trivia Database
-    async fetchFromOpenTDB(keywords) {
+    async fetchFromOpenTDB(keywords, subject) {
         const questions = []
 
         try {
-            // Map keywords to OpenTDB categories
+            // Map keywords to OpenTDB categories with better mapping for nursing subjects
             const categoryMap = {
-                'medical': 17, 'science': 17, 'biology': 17,
-                'psychology': 22, 'sociology': 22,
-                'management': 9, 'general': 9
+                'medical': 17, 'science': 17, 'biology': 17, 'anatomy': 17, 'physiology': 17,
+                'psychology': 22, 'sociology': 22, 'psychiatry': 22, 'mental_health': 22,
+                'management': 9, 'general': 9, 'administration': 9,
+                'nursing': 17, 'healthcare': 17, 'microbiology': 17,
+                'nutrition': 17, 'food_science': 17, 'pediatrics': 17,
+                'obstetrics': 17, 'gynecology': 17, 'community': 22,
+                'public_health': 22, 'epidemiology': 17, 'research': 19
             }
 
-            const category = categoryMap[keywords[0]] || 9
+            // Try multiple categories for better variety
+            const possibleCategories = keywords.map(keyword => categoryMap[keyword]).filter(Boolean)
+            const category = possibleCategories[0] || 17 // Default to science
+            
             const response = await fetch(
-                `https://opentdb.com/api.php?amount=10&category=${category}&type=multiple&encode=url3986`
+                `https://opentdb.com/api.php?amount=15&category=${category}&type=multiple&encode=url3986`
             )
 
             if (response.ok) {
                 const data = await response.json()
 
-                if (data.results) {
+                if (data.results && data.results.length > 0) {
                     for (const item of data.results) {
+                        const correctAnswer = decodeURIComponent(item.correct_answer)
+                        const incorrectAnswers = item.incorrect_answers.map(ans => decodeURIComponent(ans))
+                        
+                        // Create all options and shuffle them
+                        const allOptions = [correctAnswer, ...incorrectAnswers]
+                        const shuffledOptions = allOptions.sort(() => Math.random() - 0.5)
+                        
                         const question = {
                             question: decodeURIComponent(item.question),
-                            options: [
-                                decodeURIComponent(item.correct_answer),
-                                ...item.incorrect_answers.map(ans => decodeURIComponent(ans))
-                            ].sort(() => Math.random() - 0.5),
-                            answer: 0 // Will be updated after shuffling
+                            options: shuffledOptions,
+                            answer: shuffledOptions.indexOf(correctAnswer),
+                            source: 'OpenTDB',
+                            subject: subject,
+                            difficulty: item.difficulty || 'medium'
                         }
-
-                        // Find correct answer index after shuffling
-                        const correctAnswer = decodeURIComponent(item.correct_answer)
-                        question.answer = question.options.indexOf(correctAnswer)
 
                         questions.push(question)
                     }
@@ -236,36 +246,53 @@ class QuestionService {
         return questions
     }
 
-    // Fetch from Quiz API (mock implementation - would need API key)
-    async fetchFromQuizAPI(keywords) {
-        // This would require an API key and proper implementation
-        // For now, return empty array
-        return []
-    }
 
     // Fetch from Trivia API
-    async fetchFromTriviaAPI(keywords) {
+    async fetchFromTriviaAPI(keywords, subject) {
         const questions = []
 
         try {
+            // Map subjects to appropriate categories
+            const categoryMapping = {
+                'Nursing Administration': 'medicine',
+                'Nursing Research': 'science',
+                'Human Physiology': 'science',
+                'Human Anatomy': 'science',
+                'Microbiology': 'science',
+                'Sociology': 'society_and_culture',
+                'Fundamentals of Nursing': 'medicine',
+                'Medical Surgical Nursing': 'medicine',
+                'Psychiatric Nursing': 'medicine',
+                'Pediatric Nursing': 'medicine',
+                'Obstetrics and Gynecology Nursing': 'medicine',
+                'Community Health Nursing': 'medicine',
+                'Nutrition': 'science'
+            }
+
+            const category = categoryMapping[subject] || 'science'
             const response = await fetch(
-                `https://the-trivia-api.com/api/questions?categories=science,medicine&limit=10&type=multiple`
+                `https://the-trivia-api.com/api/questions?categories=${category}&limit=15&type=multiple`
             )
 
             if (response.ok) {
                 const data = await response.json()
 
-                for (const item of data) {
-                    const allOptions = [item.correctAnswer, ...item.incorrectAnswers]
-                    const shuffledOptions = allOptions.sort(() => Math.random() - 0.5)
+                if (data && data.length > 0) {
+                    for (const item of data) {
+                        const allOptions = [item.correctAnswer, ...item.incorrectAnswers]
+                        const shuffledOptions = allOptions.sort(() => Math.random() - 0.5)
 
-                    const question = {
-                        question: item.question,
-                        options: shuffledOptions,
-                        answer: shuffledOptions.indexOf(item.correctAnswer)
+                        const question = {
+                            question: item.question,
+                            options: shuffledOptions,
+                            answer: shuffledOptions.indexOf(item.correctAnswer),
+                            source: 'TriviaAPI',
+                            subject: subject,
+                            difficulty: item.difficulty || 'medium'
+                        }
+
+                        questions.push(question)
                     }
-
-                    questions.push(question)
                 }
             }
         } catch (error) {
@@ -301,41 +328,235 @@ class QuestionService {
                     question: "What is the primary goal of nursing leadership?",
                     options: ["Cost reduction", "Quality patient care", "Staff satisfaction", "Efficiency"],
                     answer: 1,
-                    explanation: "The primary goal of nursing leadership is to ensure quality patient care. While cost reduction, staff satisfaction, and efficiency are important considerations, they all serve the ultimate purpose of providing safe, effective, and compassionate care to patients."
+                    source: 'fallback'
                 },
                 {
                     question: "Which leadership style involves shared decision-making?",
                     options: ["Autocratic", "Democratic", "Laissez-faire", "Bureaucratic"],
                     answer: 1,
-                    explanation: "Democratic leadership involves shared decision-making where team members participate in the decision process. This style promotes collaboration, increases staff engagement, and leads to better outcomes as it leverages the collective knowledge and experience of the team."
+                    source: 'fallback'
+                },
+                {
+                    question: "What is the purpose of a nursing care plan?",
+                    options: ["Documentation only", "Guide individualized patient care", "Legal protection", "Insurance requirements"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "Which principle is fundamental to nursing management?",
+                    options: ["Profit maximization", "Patient-centered care", "Staff minimization", "Technology focus"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "What does delegation in nursing involve?",
+                    options: ["Giving up responsibility", "Transferring authority with accountability", "Avoiding work", "Reducing patient care"],
+                    answer: 1,
+                    source: 'fallback'
                 }
             ],
             'Nursing Research': [
                 {
                     question: "What does a p-value of 0.05 indicate?",
                     options: ["5% chance of Type I error", "95% confidence", "Significant result", "All of the above"],
-                    answer: 3
+                    answer: 3,
+                    source: 'fallback'
+                },
+                {
+                    question: "What is the gold standard for research design?",
+                    options: ["Case study", "Randomized controlled trial", "Survey research", "Qualitative study"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "What is evidence-based practice?",
+                    options: ["Using only research", "Integrating research, experience, and patient preferences", "Following protocols only", "Using intuition"],
+                    answer: 1,
+                    source: 'fallback'
                 }
             ],
             'Human Physiology': [
                 {
                     question: "What is the normal resting heart rate range?",
                     options: ["40-60 bpm", "60-100 bpm", "100-120 bpm", "120-140 bpm"],
-                    answer: 1
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "Which system controls involuntary body functions?",
+                    options: ["Somatic nervous system", "Autonomic nervous system", "Central nervous system", "Peripheral nervous system"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "What is the primary function of red blood cells?",
+                    options: ["Fight infection", "Transport oxygen", "Clot blood", "Produce hormones"],
+                    answer: 1,
+                    source: 'fallback'
+                }
+            ],
+            'Human Anatomy': [
+                {
+                    question: "How many chambers does the human heart have?",
+                    options: ["2", "3", "4", "5"],
+                    answer: 2,
+                    source: 'fallback'
+                },
+                {
+                    question: "Which bone is the longest in the human body?",
+                    options: ["Tibia", "Fibula", "Femur", "Humerus"],
+                    answer: 2,
+                    source: 'fallback'
+                },
+                {
+                    question: "Where is the liver located?",
+                    options: ["Left upper abdomen", "Right upper abdomen", "Lower abdomen", "Behind the stomach"],
+                    answer: 1,
+                    source: 'fallback'
                 }
             ],
             'Microbiology': [
                 {
                     question: "Which organism is gram-positive?",
                     options: ["E. coli", "Staphylococcus aureus", "Pseudomonas", "Salmonella"],
-                    answer: 1
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "What is the primary method of sterilization in healthcare?",
+                    options: ["Alcohol wiping", "Autoclaving", "Air drying", "UV light"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "Which microorganism causes tuberculosis?",
+                    options: ["Virus", "Bacteria", "Fungus", "Parasite"],
+                    answer: 1,
+                    source: 'fallback'
                 }
             ],
             'Sociology': [
                 {
                     question: "What are social determinants of health?",
                     options: ["Genetic factors", "Environmental and social factors", "Medical treatments", "Individual choices"],
-                    answer: 1
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "What is health equity?",
+                    options: ["Equal healthcare spending", "Same treatment for everyone", "Fair opportunity for health", "Identical health outcomes"],
+                    answer: 2,
+                    source: 'fallback'
+                },
+                {
+                    question: "Which factor most influences health outcomes?",
+                    options: ["Medical care", "Social and economic factors", "Genetics", "Personal behavior"],
+                    answer: 1,
+                    source: 'fallback'
+                }
+            ],
+            'Fundamentals of Nursing': [
+                {
+                    question: "What is the first step in the nursing process?",
+                    options: ["Planning", "Assessment", "Implementation", "Evaluation"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "What does HIPAA protect?",
+                    options: ["Patient privacy", "Nurse rights", "Hospital profits", "Medical research"],
+                    answer: 0,
+                    source: 'fallback'
+                },
+                {
+                    question: "What is the most important infection control practice?",
+                    options: ["Wearing gloves", "Hand hygiene", "Using masks", "Isolation"],
+                    answer: 1,
+                    source: 'fallback'
+                }
+            ],
+            'Medical Surgical Nursing': [
+                {
+                    question: "What is the priority assessment for a post-operative patient?",
+                    options: ["Pain level", "Airway and breathing", "Wound healing", "Mobility"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "Which vital sign indicates shock?",
+                    options: ["High blood pressure", "Low heart rate", "Low blood pressure", "High temperature"],
+                    answer: 2,
+                    source: 'fallback'
+                }
+            ],
+            'Psychiatric Nursing': [
+                {
+                    question: "What is the therapeutic relationship in psychiatric nursing?",
+                    options: ["Friendship", "Professional helping relationship", "Casual interaction", "Personal relationship"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "What is the priority in suicide risk assessment?",
+                    options: ["Past history", "Current plan", "Family history", "Social support"],
+                    answer: 1,
+                    source: 'fallback'
+                }
+            ],
+            'Pediatric Nursing': [
+                {
+                    question: "What is the leading cause of death in children?",
+                    options: ["Cancer", "Accidents/injuries", "Infections", "Birth defects"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "At what age can children begin to understand death?",
+                    options: ["2-3 years", "5-7 years", "10-12 years", "Adolescence"],
+                    answer: 1,
+                    source: 'fallback'
+                }
+            ],
+            'Obstetrics and Gynecology Nursing': [
+                {
+                    question: "What is the normal duration of pregnancy?",
+                    options: ["38 weeks", "40 weeks", "42 weeks", "44 weeks"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "What is preeclampsia?",
+                    options: ["High blood sugar", "High blood pressure in pregnancy", "Low iron", "Infection"],
+                    answer: 1,
+                    source: 'fallback'
+                }
+            ],
+            'Community Health Nursing': [
+                {
+                    question: "What is primary prevention?",
+                    options: ["Treating disease", "Preventing disease occurrence", "Rehabilitation", "Screening"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "What is herd immunity?",
+                    options: ["Individual protection", "Community protection through vaccination", "Natural immunity", "Antibiotic resistance"],
+                    answer: 1,
+                    source: 'fallback'
+                }
+            ],
+            'Nutrition': [
+                {
+                    question: "What is the recommended daily water intake?",
+                    options: ["4-6 glasses", "8-10 glasses", "12-14 glasses", "16-18 glasses"],
+                    answer: 1,
+                    source: 'fallback'
+                },
+                {
+                    question: "Which vitamin deficiency causes scurvy?",
+                    options: ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+                    answer: 2,
+                    source: 'fallback'
                 }
             ]
         }
