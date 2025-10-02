@@ -300,12 +300,14 @@ class QuestionService {
                 {
                     question: "What is the primary goal of nursing leadership?",
                     options: ["Cost reduction", "Quality patient care", "Staff satisfaction", "Efficiency"],
-                    answer: 1
+                    answer: 1,
+                    explanation: "The primary goal of nursing leadership is to ensure quality patient care. While cost reduction, staff satisfaction, and efficiency are important considerations, they all serve the ultimate purpose of providing safe, effective, and compassionate care to patients."
                 },
                 {
                     question: "Which leadership style involves shared decision-making?",
                     options: ["Autocratic", "Democratic", "Laissez-faire", "Bureaucratic"],
-                    answer: 1
+                    answer: 1,
+                    explanation: "Democratic leadership involves shared decision-making where team members participate in the decision process. This style promotes collaboration, increases staff engagement, and leads to better outcomes as it leverages the collective knowledge and experience of the team."
                 }
             ],
             'Nursing Research': [

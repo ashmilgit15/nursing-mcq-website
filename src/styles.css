@@ -744,50 +744,139 @@ input:focus {
     }
 }
 
-/* Explanation modal */
+/* Explanation Section */
+.explanation-section {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
+
+.explanation-btn {
+    background: linear-gradient(135deg, #ffc107, #ffcd39);
+    color: #212529;
+    font-weight: 600;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.explanation-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 193, 7, 0.4);
+    background: linear-gradient(135deg, #ffcd39, #ffd60a);
+}
+
+/* Explanation Modal */
 .explanation-modal {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1000;
     padding: 20px;
+    backdrop-filter: blur(5px);
 }
 
 .explanation-content {
     background: white;
-    border-radius: 16px;
+    border-radius: 20px;
     padding: 32px;
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
-    max-height: 80vh;
+    max-height: 85vh;
     overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.explanation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #f8f9fa;
 }
 
 .explanation-title {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #667eea;
+    margin: 0;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+    background: #f8f9fa;
+    color: #333;
+}
+
+.explanation-question {
+    background: #f8f9ff;
+    padding: 16px;
+    border-radius: 12px;
     margin-bottom: 16px;
-    color: #495057;
+    border-left: 4px solid #667eea;
+}
+
+.explanation-answer {
+    background: #d4edda;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid #28a745;
 }
 
 .explanation-text {
-    line-height: 1.7;
-    color: #666;
+    background: #fff3cd;
+    padding: 20px;
+    border-radius: 12px;
     margin-bottom: 24px;
+    border-left: 4px solid #ffc107;
+    line-height: 1.7;
+    color: #333;
 }
 
-.close-btn {
-    background: #667eea;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 500;
+.explanation-text p {
+    margin: 8px 0 0 0;
+    font-size: 1.05rem;
+}
+
+.explanation-actions {
+    text-align: center;
 }

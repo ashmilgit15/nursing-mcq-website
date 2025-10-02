@@ -8,7 +8,8 @@
                 "GABA",
                 "Acetylcholine"
             ],
-            "answer": 1
+            "answer": 1,
+            "explanation": "Dopamine dysregulation, particularly hyperactivity in the mesolimbic pathway and hypoactivity in the mesocortical pathway, is the primary neurotransmitter imbalance in schizophrenia. This forms the basis for antipsychotic medications that block dopamine receptors."
         },
         {
             "question": "In cognitive behavioral therapy, the primary focus is on modifying:",
@@ -18,7 +19,8 @@
                 "Cognitive distortions",
                 "Genetic predispositions"
             ],
-            "answer": 2
+            "answer": 2,
+            "explanation": "CBT focuses on identifying and changing maladaptive thought patterns (cognitive distortions) and behaviors. It's based on the principle that our thoughts, feelings, and behaviors are interconnected, and changing negative thought patterns can improve emotional and behavioral outcomes."
         },
         {
             "question": "Which antipsychotic has the highest risk of agranulocytosis?",
@@ -28,7 +30,8 @@
                 "Clozapine",
                 "Aripiprazole"
             ],
-            "answer": 2
+            "answer": 2,
+            "explanation": "Clozapine carries a 1-2% risk of agranulocytosis, a potentially fatal condition where white blood cell count drops dramatically. This is why patients on clozapine require regular blood monitoring (weekly for the first 6 months, then biweekly). Despite this risk, clozapine is highly effective for treatment-resistant schizophrenia."
         },
         {
             "question": "The most evidence-based therapy for PTSD with re-experiencing is:",

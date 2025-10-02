@@ -112,6 +112,65 @@ function Notification({ message, type, onClose }) {
     )
 }
 
+// Explanation Modal component
+function ExplanationModal({ question, isOpen, onClose }) {
+    useEffect(() => {
+        const handleEscape = (e) => {
+            if (e.key === 'Escape') {
+                onClose()
+            }
+        }
+        
+        if (isOpen) {
+            document.addEventListener('keydown', handleEscape)
+            document.body.style.overflow = 'hidden'
+        }
+        
+        return () => {
+            document.removeEventListener('keydown', handleEscape)
+            document.body.style.overflow = 'unset'
+        }
+    }, [isOpen, onClose])
+
+    if (!isOpen || !question) return null
+
+    const handleBackdropClick = (e) => {
+        if (e.target === e.currentTarget) {
+            onClose()
+        }
+    }
+
+    return (
+        <div className="explanation-modal" onClick={handleBackdropClick}>
+            <div className="explanation-content">
+                <div className="explanation-header">
+                    <h3 className="explanation-title">💡 Explanation</h3>
+                    <button className="modal-close" onClick={onClose}>×</button>
+                </div>
+                
+                <div className="explanation-question">
+                    <strong>Question:</strong> {question.question}
+                </div>
+                
+                <div className="explanation-answer">
+                    <strong>Correct Answer:</strong> {question.options[question.answer]}
+                </div>
+                
+                <div className="explanation-text">
+                    <strong>Explanation:</strong>
+                    <p>{question.explanation || "No explanation available for this question yet. We're working on adding more detailed explanations!"}</p>
+                </div>
+                
+                <div className="explanation-actions">
+                    <button className="btn primary" onClick={onClose}>
+                        Got it! 👍
+                    </button>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 // Statistics component
 function Statistics({ stats, onViewBookmarks }) {
     const [collectionStats, setCollectionStats] = useState({})
@@ -335,6 +394,7 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
     const [seed, setSeed] = useState(() => Math.random())
     const [stats, setStats] = useState(getStoredStats())
     const [questionUpdateNotification, setQuestionUpdateNotification] = useState(null)
+    const [showExplanation, setShowExplanation] = useState(false)
 
     // Load questions from service
     useEffect(() => {
@@ -467,6 +527,7 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
     }
 
     function nextQuestion() {
+        setShowExplanation(false) // Hide explanation when moving to next question
         if (currentInRound + 1 < total) {
             setCurrentInRound((c) => c + 1)
             setSelectedIndex(null)
@@ -481,6 +542,7 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
     }
 
     function previousQuestion() {
+        setShowExplanation(false) // Hide explanation when moving to previous question
         if (currentInRound > 0) {
             setCurrentInRound((c) => c - 1)
             // Restore previous answer if it exists
@@ -649,6 +711,26 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
                 </button>
                 <button className="btn" onClick={onRestart}>Change subject</button>
             </div>
+
+            {/* Show explanation button only after answering */}
+            {selectedIndex !== null && q && (
+                <div className="explanation-section">
+                    <button 
+                        className="btn explanation-btn" 
+                        onClick={() => setShowExplanation(true)}
+                        title="Learn more about this answer"
+                    >
+                        💡 See Explanation
+                    </button>
+                </div>
+            )}
+
+            {/* Explanation Modal */}
+            <ExplanationModal 
+                question={q}
+                isOpen={showExplanation}
+                onClose={() => setShowExplanation(false)}
+            />
         </div>
     )
 }
