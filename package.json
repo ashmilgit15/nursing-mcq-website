@@ -1,7 +1,7 @@
 {
     "name": "nursing-mcq-quiz",
     "private": true,
-    "homepage": "https://ashmilgit15.github.io/nursing-mcq-quiz",
+    "homepage": "https://nursing-mcq-practice.vercel.app",
     "version": "0.1.0",
     "type": "module",
     "scripts": {
