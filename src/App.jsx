@@ -553,10 +553,12 @@ function Quiz({ subject, onRestart }) {
             <div className="quiz-header">
                 <h2 className="title subject-title">{subject}</h2>
                 <div className="progress">
-                    Question {Math.min(currentInRound + 1, total)} of {total}
-                    <span className="question-bank-info">
+                    <div className="question-counter">
+                        Question {Math.min(currentInRound + 1, total)} of {total}
+                    </div>
+                    <div className="question-bank-info">
                         ({allQuestions.length} questions available)
-                    </span>
+                    </div>
                 </div>
             </div>
 

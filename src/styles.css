@@ -142,10 +142,16 @@ body {
 .progress {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    padding: 8px 16px;
+    padding: 12px 20px;
     border-radius: 20px;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+    line-height: 1.4;
 }
 
 /* Question styles */
@@ -555,12 +561,20 @@ input:focus {
     text-align: center;
 }
 
-/* Question bank info */
+/* Question counter and bank info */
+.question-counter {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: white;
+}
+
 .question-bank-info {
-    font-size: 0.8rem;
-    color: #666;
-    font-weight: normal;
-    margin-left: 8px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    margin-left: 0;
+    margin-top: 2px;
+    opacity: 0.95;
 }
 
 /* Low questions warning */
@@ -598,13 +612,6 @@ input:focus {
     animation: spin 1s linear infinite;
 }
 
-/* Enhanced progress indicator */
-.progress {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-}
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -668,6 +675,17 @@ input:focus {
         display: block;
         margin-left: 0;
         margin-top: 4px;
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.85);
+    }
+    
+    .progress {
+        font-size: 0.85rem;
+        padding: 10px 16px;
+    }
+    
+    .question-counter {
+        font-size: 0.85rem;
     }
 }
 
