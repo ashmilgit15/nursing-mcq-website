@@ -19,8 +19,8 @@ const SUBJECTS = [
 ]
 
 const DIFFICULTY_LEVELS = {
-    easy: { name: 'Easy', timePerQuestion: 120, color: 'easy' },
-    medium: { name: 'Medium', timePerQuestion: 90, color: 'medium' },
+    easy: { name: 'Easy', timePerQuestion: 60, color: 'easy' },
+    medium: { name: 'Medium', timePerQuestion: 60, color: 'medium' },
     hard: { name: 'Hard', timePerQuestion: 60, color: 'hard' }
 }
 
@@ -89,8 +89,8 @@ function Timer({ timeLeft, isActive, onTimeUp, difficulty }) {
                 ⏱️ {formatTime(timeLeft)}
             </div>
             <div className="difficulty-indicator">
-                <span className={`difficulty-btn ${difficulty} active`}>
-                    {DIFFICULTY_LEVELS[difficulty].name}
+                <span className="difficulty-btn medium active">
+                    60 Seconds
                 </span>
             </div>
         </div>
@@ -341,16 +341,15 @@ function BookmarkedReview({ onBack }) {
 
 function SubjectPicker({ onPick, onViewBookmarks }) {
     const [difficulty, setDifficulty] = useState('medium')
-    const [timerEnabled, setTimerEnabled] = useState(true)
     const [stats] = useState(getStoredStats())
 
     return (
         <div className="card">
             <h1 className="title">Nursing MCQ Practice</h1>
-            <p className="subtitle">Select difficulty and subject to begin</p>
-
+            <p className="subtitle">Select difficulty and subject to begin • 60 seconds per question</p>
+            
             <Statistics stats={stats} onViewBookmarks={onViewBookmarks} />
-
+            
             <div className="difficulty-selector">
                 {Object.entries(DIFFICULTY_LEVELS).map(([key, level]) => (
                     <button
@@ -358,28 +357,17 @@ function SubjectPicker({ onPick, onViewBookmarks }) {
                         className={`difficulty-btn ${level.color} ${difficulty === key ? 'active' : ''}`}
                         onClick={() => setDifficulty(key)}
                     >
-                        {level.name} ({level.timePerQuestion}s per question)
+                        {level.name} Level
                     </button>
                 ))}
             </div>
-
-            <div className="timer-container">
-                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}>
-                    <input
-                        type="checkbox"
-                        checked={timerEnabled}
-                        onChange={(e) => setTimerEnabled(e.target.checked)}
-                    />
-                    Enable Timer
-                </label>
-            </div>
-
+            
             <div className="subjects-grid">
                 {SUBJECTS.map((s) => (
-                    <button
-                        key={s}
-                        className="btn subject"
-                        onClick={() => onPick(s, difficulty, timerEnabled)}
+                    <button 
+                        key={s} 
+                        className="btn subject" 
+                        onClick={() => onPick(s, difficulty)}
                     >
                         {s}
                     </button>
@@ -389,7 +377,7 @@ function SubjectPicker({ onPick, onViewBookmarks }) {
     )
 }
 
-function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
+function Quiz({ subject, difficulty, onRestart }) {
     const [allQuestions, setAllQuestions] = useState([])
     const [seed, setSeed] = useState(() => Math.random())
     const [stats, setStats] = useState(getStoredStats())
@@ -439,9 +427,9 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
     const [answers, setAnswers] = useState([]) // per-round answers
     const [showResult, setShowResult] = useState(false)
 
-    // Timer states
-    const [timeLeft, setTimeLeft] = useState(DIFFICULTY_LEVELS[difficulty].timePerQuestion)
-    const [timerActive, setTimerActive] = useState(timerEnabled)
+    // Timer states - always enabled with 60 seconds
+    const [timeLeft, setTimeLeft] = useState(60)
+    const [timerActive, setTimerActive] = useState(true)
 
     // Derive the question for the current round and position
     let q = null
@@ -476,11 +464,9 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
 
     // Reset timer when moving to next question
     useEffect(() => {
-        if (timerEnabled) {
-            setTimeLeft(DIFFICULTY_LEVELS[difficulty].timePerQuestion)
-            setTimerActive(selectedIndex === null)
-        }
-    }, [currentInRound, difficulty, timerEnabled, selectedIndex])
+        setTimeLeft(60) // Always 60 seconds
+        setTimerActive(selectedIndex === null)
+    }, [currentInRound, selectedIndex])
 
     function handlePick(i) {
         if (selectedIndex !== null) return
@@ -531,10 +517,8 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
         if (currentInRound + 1 < total) {
             setCurrentInRound((c) => c + 1)
             setSelectedIndex(null)
-            if (timerEnabled) {
-                setTimeLeft(DIFFICULTY_LEVELS[difficulty].timePerQuestion)
-                setTimerActive(true)
-            }
+            setTimeLeft(60) // Always 60 seconds
+            setTimerActive(true)
         } else {
             setShowResult(true)
             setTimerActive(false)
@@ -560,10 +544,8 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
         setSelectedIndex(null)
         setAnswers([])
         setShowResult(false)
-        if (timerEnabled) {
-            setTimeLeft(DIFFICULTY_LEVELS[difficulty].timePerQuestion)
-            setTimerActive(true)
-        }
+        setTimeLeft(60) // Always 60 seconds
+        setTimerActive(true)
     }
 
     function nextRound() {
@@ -580,10 +562,8 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
         setSelectedIndex(null)
         setAnswers([])
         setShowResult(false)
-        if (timerEnabled) {
-            setTimeLeft(DIFFICULTY_LEVELS[difficulty].timePerQuestion)
-            setTimerActive(true)
-        }
+        setTimeLeft(60) // Always 60 seconds
+        setTimerActive(true)
     }
 
     if (showResult) {
@@ -652,11 +632,11 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
                 </div>
             </div>
 
-            <Timer
+            <Timer 
                 timeLeft={timeLeft}
                 isActive={timerActive}
                 onTimeUp={handleTimeUp}
-                difficulty={difficulty}
+                difficulty="fixed"
             />
 
             <div className="question" style={{ position: 'relative' }}>
@@ -748,46 +728,45 @@ function mulberry32(a) {
 export default function App() {
     const [currentView, setCurrentView] = useState('subjects') // 'subjects', 'quiz', 'bookmarks'
     const [quizConfig, setQuizConfig] = useState(null)
-
-    const handleSubjectPick = (subject, difficulty, timerEnabled) => {
-        setQuizConfig({ subject, difficulty, timerEnabled })
+    
+    const handleSubjectPick = (subject, difficulty) => {
+        setQuizConfig({ subject, difficulty })
         setCurrentView('quiz')
     }
-
+    
     const handleRestart = () => {
         setQuizConfig(null)
         setCurrentView('subjects')
     }
-
+    
     const handleViewBookmarks = () => {
         setCurrentView('bookmarks')
     }
-
+    
     const handleBackToSubjects = () => {
         setCurrentView('subjects')
     }
-
+    
     return (
         <div className="app">
             {currentView === 'subjects' && (
-                <SubjectPicker
-                    onPick={handleSubjectPick}
+                <SubjectPicker 
+                    onPick={handleSubjectPick} 
                     onViewBookmarks={handleViewBookmarks}
                 />
             )}
             {currentView === 'quiz' && quizConfig && (
-                <Quiz
+                <Quiz 
                     subject={quizConfig.subject}
                     difficulty={quizConfig.difficulty}
-                    timerEnabled={quizConfig.timerEnabled}
-                    onRestart={handleRestart}
+                    onRestart={handleRestart} 
                 />
             )}
             {currentView === 'bookmarks' && (
                 <BookmarkedReview onBack={handleBackToSubjects} />
             )}
             <footer className="footer">
-                Enhanced MCQ Practice • Timer & Difficulty Options • Progress Tracking • Bookmarks
+                Enhanced MCQ Practice • 60 Second Timer • Progress Tracking • Bookmarks
                 <div className="watermark">
                     Developed by <a href="https://github.com/ashmilgit15" target="_blank" rel="noopener noreferrer">@ashmilgit15</a>
                 </div>
