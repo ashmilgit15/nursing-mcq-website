@@ -480,6 +480,16 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
         }
     }
 
+    function previousQuestion() {
+        if (currentInRound > 0) {
+            setCurrentInRound((c) => c - 1)
+            // Restore previous answer if it exists
+            const previousAnswer = answers[currentInRound - 1]
+            setSelectedIndex(previousAnswer ? previousAnswer.picked : null)
+            setTimerActive(false) // Don't restart timer for previous questions
+        }
+    }
+
     function restart() {
         // Start a completely new randomized run from the first chunk
         setSeed(Math.random())
@@ -623,11 +633,19 @@ function Quiz({ subject, difficulty, timerEnabled, onRestart }) {
             )}
 
             <div className="actions">
+                <button 
+                    className="btn secondary" 
+                    onClick={previousQuestion} 
+                    disabled={currentInRound === 0}
+                    title="Go to previous question"
+                >
+                    ← Previous
+                </button>
                 <button className="btn primary" onClick={nextQuestion} disabled={selectedIndex === null || !q}>
-                    {currentInRound + 1 === total ? 'Finish' : 'Next'}
+                    {currentInRound + 1 === total ? 'Finish' : 'Next →'}
                 </button>
                 <button className="btn secondary" onClick={toggleBookmark} disabled={!q}>
-                    {isBookmarked ? 'Remove Bookmark' : 'Bookmark Question'}
+                    {isBookmarked ? '★ Remove' : '☆ Bookmark'}
                 </button>
                 <button className="btn" onClick={onRestart}>Change subject</button>
             </div>
