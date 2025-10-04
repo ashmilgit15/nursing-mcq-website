@@ -3,8 +3,8 @@ import questionsData from './questions.json'
 
 // Configuration for question collection
 const QUESTION_CONFIG = {
-    MIN_QUESTIONS_THRESHOLD: 15, // Trigger collection when below this number
-    BATCH_SIZE: 30, // Number of questions to fetch at once
+    MIN_QUESTIONS_THRESHOLD: 50, // Trigger collection when below this number
+    BATCH_SIZE: 50, // Number of questions to fetch at once
     MAX_RETRIES: 3,
     RETRY_DELAY: 1000, // ms
 }
@@ -211,7 +211,7 @@ class QuestionService {
             const category = possibleCategories[0] || 17 // Default to science
             
             const response = await fetch(
-                `https://opentdb.com/api.php?amount=15&category=${category}&type=multiple&encode=url3986`
+                `https://opentdb.com/api.php?amount=25&category=${category}&type=multiple&encode=url3986`
             )
 
             if (response.ok) {
@@ -271,7 +271,7 @@ class QuestionService {
 
             const category = categoryMapping[subject] || 'science'
             const response = await fetch(
-                `https://the-trivia-api.com/api/questions?categories=${category}&limit=15&type=multiple`
+                `https://the-trivia-api.com/api/questions?categories=${category}&limit=25&type=multiple`
             )
 
             if (response.ok) {

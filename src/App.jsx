@@ -357,6 +357,7 @@ function Quiz({ subject, onRestart }) {
     // Derive the question for the current round and position
     let q = null
     let questionId = null
+    let shuffledQuestion = null
     if (allQuestions.length === 0) {
         q = null
     } else if (allQuestions.length >= ROUND_SIZE) {
@@ -370,6 +371,25 @@ function Quiz({ subject, onRestart }) {
         const idx = order[currentInRound % order.length]
         q = allQuestions[idx]
         questionId = `${subject}-${idx}`
+    }
+
+    // Shuffle options for the current question
+    if (q) {
+        // Check if we already have a shuffled version for this question in this round
+        const existingAnswer = answers[currentInRound]
+        if (existingAnswer && existingAnswer.shuffledQuestion) {
+            shuffledQuestion = existingAnswer.shuffledQuestion
+        } else {
+            const shuffledOptions = shuffle(q.options)
+            const correctAnswerText = q.options[q.answer]
+            const newCorrectIndex = shuffledOptions.findIndex(option => option === correctAnswerText)
+            
+            shuffledQuestion = {
+                ...q,
+                options: shuffledOptions,
+                answer: newCorrectIndex
+            }
+        }
     }
 
     const total = ROUND_SIZE
@@ -396,10 +416,10 @@ function Quiz({ subject, onRestart }) {
         setSelectedIndex(i)
         setTimerActive(false) // Stop timer when answer is selected
 
-        const correct = q && i === q.answer
+        const correct = shuffledQuestion && i === shuffledQuestion.answer
         setAnswers((prev) => {
             const next = prev.slice()
-            next[currentInRound] = { picked: i, correct }
+            next[currentInRound] = { picked: i, correct, shuffledQuestion }
             return next
         })
 
@@ -477,15 +497,9 @@ function Quiz({ subject, onRestart }) {
         const updatedQuestions = questionService.getQuestions(subject)
         setAllQuestions(updatedQuestions)
         
-        // Advance to the next non-overlapping 50-question block. If we reach the end, reshuffle.
-        const nextStart = chunkStart + ROUND_SIZE
-        if (updatedQuestions.length >= ROUND_SIZE && nextStart < order.length) {
-            setChunkStart(nextStart)
-        } else {
-            // reshuffle and start over
-            setSeed(Math.random())
-            setChunkStart(0)
-        }
+        // Always reshuffle with new seed to get fresh questions
+        setSeed(Math.random())
+        setChunkStart(0)
         setCurrentInRound(0)
         setSelectedIndex(null)
         setAnswers([])
@@ -508,18 +522,8 @@ function Quiz({ subject, onRestart }) {
                 <h3 className="subtitle review-heading">Review answers</h3>
                 <ol className="review-list">
                     {[...Array(total)].map((_, idx) => {
-                        let question = null
-                        if (allQuestions.length === 0) question = null
-                        else if (allQuestions.length >= ROUND_SIZE) {
-                            const gi = chunkStart + idx
-                            const withinBank = gi < order.length
-                            const qi = withinBank ? order[gi] : order[gi % order.length]
-                            question = allQuestions[qi]
-                        } else {
-                            const qi = order[idx % order.length]
-                            question = allQuestions[qi]
-                        }
                         const user = answers[idx]
+                        const question = user?.shuffledQuestion || null
                         const isCorrect = user ? user.correct : false
                         return (
                             <li key={idx} className="review-item">
@@ -529,6 +533,7 @@ function Quiz({ subject, onRestart }) {
                                         <span className={isCorrect ? 'badge correct' : 'badge incorrect'}>
                                             {isCorrect ? 'Correct' : 'Incorrect'}
                                         </span>
+                                        <span>You picked: {question.options[user?.picked ?? -1] ?? '—'}</span>
                                         <span className="correct-ans">Correct: {question.options[question.answer]}</span>
                                     </div>
                                 )}
@@ -570,8 +575,8 @@ function Quiz({ subject, onRestart }) {
             />
 
             <div className="question" style={{ position: 'relative' }}>
-                {q ? q.question : allQuestions.length === 0 ? 'Loading questions...' : 'No questions available.'}
-                {q && (
+                {shuffledQuestion ? shuffledQuestion.question : allQuestions.length === 0 ? 'Loading questions...' : 'No questions available.'}
+                {shuffledQuestion && (
                     <button
                         className={`bookmark-btn ${isBookmarked ? 'bookmarked' : ''}`}
                         onClick={toggleBookmark}
@@ -583,10 +588,10 @@ function Quiz({ subject, onRestart }) {
             </div>
 
             <div className="options">
-                {q && q.options.map((opt, i) => {
+                {shuffledQuestion && shuffledQuestion.options.map((opt, i) => {
                     const picked = selectedIndex === i
                     const showState = selectedIndex !== null
-                    const isCorrect = q.answer === i
+                    const isCorrect = shuffledQuestion.answer === i
                     let cls = 'btn option'
                     if (showState && isCorrect) cls += ' correct'
                     else if (showState && picked && !isCorrect) cls += ' incorrect'
@@ -635,8 +640,191 @@ function mulberry32(a) {
     }
 }
 
+// Navigation Bar Component
+function NavBar({ currentView, onNavigate }) {
+    return (
+        <nav className="navbar">
+            <div className="nav-container">
+                <div className="nav-brand">
+                    <h2>Nursing MCQ Practice</h2>
+                </div>
+                <div className="nav-links">
+                    <button 
+                        className={`nav-link ${currentView === 'subjects' ? 'active' : ''}`}
+                        onClick={() => onNavigate('subjects')}
+                    >
+                        Home
+                    </button>
+                    <button 
+                        className={`nav-link ${currentView === 'bookmarks' ? 'active' : ''}`}
+                        onClick={() => onNavigate('bookmarks')}
+                    >
+                        Bookmarks
+                    </button>
+                    <button 
+                        className="nav-link donate-btn"
+                        onClick={() => onNavigate('donate')}
+                    >
+                        💝 Donate
+                    </button>
+                </div>
+            </div>
+        </nav>
+    )
+}
+
+// Donation Page Component
+function DonationPage({ onBack }) {
+    const [selectedAmount, setSelectedAmount] = useState(0)
+    const [customAmount, setCustomAmount] = useState('')
+    const [donorName, setDonorName] = useState('')
+    const [donorEmail, setDonorEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    const presetAmounts = [5, 10, 25, 50, 100]
+
+    const handleAmountSelect = (amount) => {
+        setSelectedAmount(amount)
+        setCustomAmount('')
+    }
+
+    const handleCustomAmountChange = (e) => {
+        const value = e.target.value
+        setCustomAmount(value)
+        if (value && !isNaN(value) && parseFloat(value) > 0) {
+            setSelectedAmount(parseFloat(value))
+        }
+    }
+
+    const handleDonate = () => {
+        const amount = selectedAmount
+        if (amount <= 0) {
+            alert('Please select a valid donation amount')
+            return
+        }
+
+        // For demo purposes, we'll show a success message
+        // In a real implementation, you would integrate with a payment processor
+        alert(`Thank you for your donation of $${amount}! This is a demo - no actual payment was processed.`)
+        
+        // Reset form
+        setSelectedAmount(0)
+        setCustomAmount('')
+        setDonorName('')
+        setDonorEmail('')
+        setMessage('')
+    }
+
+    return (
+        <div className="card">
+            <h1 className="title">💝 Support Our Mission</h1>
+            <p className="subtitle">
+                Help us keep this educational platform free and accessible to all nursing students worldwide.
+                Your donation helps us maintain the server, add new questions, and improve the learning experience.
+            </p>
+
+            <div className="donation-content">
+                <div className="donation-amounts">
+                    <h3>Select Donation Amount</h3>
+                    <div className="amount-grid">
+                        {presetAmounts.map(amount => (
+                            <button
+                                key={amount}
+                                className={`amount-btn ${selectedAmount === amount ? 'selected' : ''}`}
+                                onClick={() => handleAmountSelect(amount)}
+                            >
+                                ${amount}
+                            </button>
+                        ))}
+                    </div>
+                    
+                    <div className="custom-amount">
+                        <label htmlFor="customAmount">Custom Amount ($)</label>
+                        <input
+                            id="customAmount"
+                            type="number"
+                            value={customAmount}
+                            onChange={handleCustomAmountChange}
+                            placeholder="Enter amount"
+                            min="1"
+                            step="0.01"
+                        />
+                    </div>
+                </div>
+
+                <div className="donation-form">
+                    <h3>Donor Information (Optional)</h3>
+                    <div className="form-group">
+                        <label htmlFor="donorName">Name</label>
+                        <input
+                            id="donorName"
+                            type="text"
+                            value={donorName}
+                            onChange={(e) => setDonorName(e.target.value)}
+                            placeholder="Your name (optional)"
+                        />
+                    </div>
+                    
+                    <div className="form-group">
+                        <label htmlFor="donorEmail">Email</label>
+                        <input
+                            id="donorEmail"
+                            type="email"
+                            value={donorEmail}
+                            onChange={(e) => setDonorEmail(e.target.value)}
+                            placeholder="your.email@example.com (optional)"
+                        />
+                    </div>
+                    
+                    <div className="form-group">
+                        <label htmlFor="message">Message (Optional)</label>
+                        <textarea
+                            id="message"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            placeholder="Leave a message of support..."
+                            rows="3"
+                        />
+                    </div>
+                </div>
+
+                <div className="donation-summary">
+                    <div className="summary-item">
+                        <span>Selected Amount:</span>
+                        <span className="amount">${selectedAmount || 0}</span>
+                    </div>
+                    <button 
+                        className="btn primary donate-button"
+                        onClick={handleDonate}
+                        disabled={selectedAmount <= 0}
+                    >
+                        Donate ${selectedAmount || 0}
+                    </button>
+                </div>
+
+                <div className="donation-info">
+                    <h4>Why Donate?</h4>
+                    <ul>
+                        <li>🎓 Keep the platform free for all students</li>
+                        <li>📚 Help us add more high-quality questions</li>
+                        <li>⚡ Improve server performance and reliability</li>
+                        <li>🔧 Support ongoing development and features</li>
+                        <li>🌍 Make nursing education accessible worldwide</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="actions">
+                <button className="btn secondary" onClick={onBack}>
+                    ← Back to Home
+                </button>
+            </div>
+        </div>
+    )
+}
+
 export default function App() {
-    const [currentView, setCurrentView] = useState('subjects') // 'subjects', 'quiz', 'bookmarks'
+    const [currentView, setCurrentView] = useState('subjects') // 'subjects', 'quiz', 'bookmarks', 'donate'
     const [quizConfig, setQuizConfig] = useState(null)
     
     const handleSubjectPick = (subject) => {
@@ -661,9 +849,18 @@ export default function App() {
     const handleBackToSubjects = () => {
         setCurrentView('subjects')
     }
+
+    const handleNavigate = (view) => {
+        setCurrentView(view)
+        if (view === 'subjects') {
+            setQuizConfig(null)
+        }
+    }
     
     return (
         <div className="app">
+            <NavBar currentView={currentView} onNavigate={handleNavigate} />
+            
             {currentView === 'subjects' && (
                 <SubjectPicker 
                     onPick={handleSubjectPick} 
@@ -679,6 +876,10 @@ export default function App() {
             {currentView === 'bookmarks' && (
                 <BookmarkedReview onBack={handleBackToSubjects} />
             )}
+            {currentView === 'donate' && (
+                <DonationPage onBack={handleBackToSubjects} />
+            )}
+            
             <footer className="footer">
                 Enhanced MCQ Practice • 60 Second Timer • Progress Tracking • Bookmarks
                 <div className="watermark">
