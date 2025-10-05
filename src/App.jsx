@@ -42,10 +42,12 @@ const saveStats = (stats) => {
     localStorage.setItem('nursingMcqStats', JSON.stringify(stats))
 }
 
-function shuffle(array) {
+// Seeded shuffle function for consistent results
+function shuffle(array, seed) {
     const a = array.slice()
+    const rng = mulberry32(seed)
     for (let i = a.length - 1; i > 0; i -= 1) {
-        const j = Math.floor(Math.random() * (i + 1))
+        const j = Math.floor(rng() * (i + 1))
             ;[a[i], a[j]] = [a[j], a[i]]
     }
     return a
@@ -380,7 +382,9 @@ function Quiz({ subject, onRestart }) {
         if (existingAnswer && existingAnswer.shuffledQuestion) {
             shuffledQuestion = existingAnswer.shuffledQuestion
         } else {
-            const shuffledOptions = shuffle(q.options)
+            // Create a unique seed for this question based on question content and round
+            const questionSeed = Math.floor(seed * 1e9) + q.question.length + currentInRound
+            const shuffledOptions = shuffle(q.options, questionSeed)
             const correctAnswerText = q.options[q.answer]
             const newCorrectIndex = shuffledOptions.findIndex(option => option === correctAnswerText)
             

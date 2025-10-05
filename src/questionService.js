@@ -87,6 +87,80 @@ class QuestionService {
         }
     }
 
+    // Seeded shuffle function for consistent results
+    shuffleArray(array, seed) {
+        const a = array.slice()
+        const rng = this.mulberry32(seed)
+        for (let i = a.length - 1; i > 0; i -= 1) {
+            const j = Math.floor(rng() * (i + 1))
+            ;[a[i], a[j]] = [a[j], a[i]]
+        }
+        return a
+    }
+
+    // Simple seeded RNG for deterministic shuffle
+    mulberry32(a) {
+        return function () {
+            let t = (a += 0x6d2b79f5)
+            t = Math.imul(t ^ (t >>> 15), t | 1)
+            t = Math.imul(t ^ (t >>> 7), t | 61)
+            t ^= t + Math.imul(t ^ (t >>> 7), t | 61)
+            return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+        }
+    }
+
+    // Check if a question is nursing/medical related
+    isNursingRelated(questionText, subject) {
+        const text = questionText.toLowerCase()
+        
+        // Nursing and medical keywords
+        const nursingKeywords = [
+            'nurse', 'nursing', 'patient', 'medical', 'health', 'healthcare', 'hospital', 'clinic',
+            'diagnosis', 'treatment', 'therapy', 'medication', 'drug', 'disease', 'illness', 'symptom',
+            'anatomy', 'physiology', 'pathology', 'pharmacology', 'surgery', 'surgical', 'clinical',
+            'vital signs', 'blood pressure', 'heart rate', 'temperature', 'pulse', 'respiration',
+            'infection', 'bacteria', 'virus', 'immune', 'antibody', 'vaccine', 'epidemic', 'pandemic',
+            'mental health', 'psychiatric', 'psychology', 'depression', 'anxiety', 'schizophrenia',
+            'pediatric', 'child', 'infant', 'maternal', 'pregnancy', 'obstetric', 'gynecology',
+            'community health', 'public health', 'epidemiology', 'prevention', 'wellness',
+            'administration', 'management', 'leadership', 'research', 'evidence-based',
+            'nutrition', 'diet', 'metabolism', 'vitamin', 'mineral', 'protein', 'carbohydrate'
+        ]
+        
+        // Subject-specific keywords
+        const subjectKeywords = {
+            'Psychiatric Nursing': ['mental', 'psychiatric', 'psychology', 'behavior', 'cognitive', 'therapy', 'medication', 'antidepressant', 'antipsychotic'],
+            'Pediatric Nursing': ['child', 'pediatric', 'infant', 'toddler', 'adolescent', 'growth', 'development', 'vaccination'],
+            'Obstetrics and Gynecology Nursing': ['pregnancy', 'maternal', 'obstetric', 'gynecology', 'prenatal', 'postnatal', 'labor', 'delivery'],
+            'Community Health Nursing': ['community', 'public health', 'epidemiology', 'prevention', 'health promotion', 'population'],
+            'Nursing Administration': ['administration', 'management', 'leadership', 'policy', 'quality', 'safety', 'budget'],
+            'Nursing Research': ['research', 'study', 'evidence', 'statistics', 'methodology', 'data', 'analysis'],
+            'Medical Surgical Nursing': ['surgery', 'surgical', 'postoperative', 'preoperative', 'anesthesia', 'wound', 'healing'],
+            'Fundamentals of Nursing': ['basic', 'fundamental', 'assessment', 'care', 'hygiene', 'comfort', 'safety'],
+            'Human Anatomy': ['anatomy', 'structure', 'organ', 'system', 'tissue', 'cell', 'bone', 'muscle'],
+            'Human Physiology': ['physiology', 'function', 'process', 'mechanism', 'homeostasis', 'regulation'],
+            'Microbiology': ['microbiology', 'bacteria', 'virus', 'fungus', 'parasite', 'infection', 'pathogen'],
+            'Sociology': ['society', 'social', 'culture', 'behavior', 'group', 'community', 'family'],
+            'Nutrition': ['nutrition', 'diet', 'food', 'nutrient', 'vitamin', 'mineral', 'metabolism']
+        }
+        
+        // Check for nursing keywords
+        const hasNursingKeyword = nursingKeywords.some(keyword => text.includes(keyword))
+        
+        // Check for subject-specific keywords
+        const subjectSpecificKeywords = subjectKeywords[subject] || []
+        const hasSubjectKeyword = subjectSpecificKeywords.some(keyword => text.includes(keyword))
+        
+        // Exclude non-medical topics
+        const excludeKeywords = [
+            'sports', 'entertainment', 'movie', 'music', 'celebrity', 'politics', 'history', 'geography',
+            'literature', 'art', 'fashion', 'technology', 'computer', 'internet', 'gaming', 'video game'
+        ]
+        const hasExcludeKeyword = excludeKeywords.some(keyword => text.includes(keyword))
+        
+        return (hasNursingKeyword || hasSubjectKeyword) && !hasExcludeKeyword
+    }
+
     // Get questions for a subject
     getQuestions(subject) {
         const questions = this.questions[subject] || []
@@ -219,23 +293,29 @@ class QuestionService {
 
                 if (data.results && data.results.length > 0) {
                     for (const item of data.results) {
-                        const correctAnswer = decodeURIComponent(item.correct_answer)
-                        const incorrectAnswers = item.incorrect_answers.map(ans => decodeURIComponent(ans))
+                        const questionText = decodeURIComponent(item.question)
                         
-                        // Create all options and shuffle them
-                        const allOptions = [correctAnswer, ...incorrectAnswers]
-                        const shuffledOptions = allOptions.sort(() => Math.random() - 0.5)
-                        
-                        const question = {
-                            question: decodeURIComponent(item.question),
-                            options: shuffledOptions,
-                            answer: shuffledOptions.indexOf(correctAnswer),
-                            source: 'OpenTDB',
-                            subject: subject,
-                            difficulty: item.difficulty || 'medium'
-                        }
+                        // Filter for nursing/medical related questions only
+                        if (this.isNursingRelated(questionText, subject)) {
+                            const correctAnswer = decodeURIComponent(item.correct_answer)
+                            const incorrectAnswers = item.incorrect_answers.map(ans => decodeURIComponent(ans))
+                            
+                            // Create all options and shuffle them with seeded randomization
+                            const allOptions = [correctAnswer, ...incorrectAnswers]
+                            const shuffleSeed = Date.now() + Math.random() * 1000
+                            const shuffledOptions = this.shuffleArray(allOptions, shuffleSeed)
+                            
+                            const question = {
+                                question: questionText,
+                                options: shuffledOptions,
+                                answer: shuffledOptions.indexOf(correctAnswer),
+                                source: 'OpenTDB',
+                                subject: subject,
+                                difficulty: item.difficulty || 'medium'
+                            }
 
-                        questions.push(question)
+                            questions.push(question)
+                        }
                     }
                 }
             }
@@ -279,19 +359,23 @@ class QuestionService {
 
                 if (data && data.length > 0) {
                     for (const item of data) {
-                        const allOptions = [item.correctAnswer, ...item.incorrectAnswers]
-                        const shuffledOptions = allOptions.sort(() => Math.random() - 0.5)
+                        // Filter for nursing/medical related questions only
+                        if (this.isNursingRelated(item.question, subject)) {
+                            const allOptions = [item.correctAnswer, ...item.incorrectAnswers]
+                            const shuffleSeed = Date.now() + Math.random() * 1000
+                            const shuffledOptions = this.shuffleArray(allOptions, shuffleSeed)
 
-                        const question = {
-                            question: item.question,
-                            options: shuffledOptions,
-                            answer: shuffledOptions.indexOf(item.correctAnswer),
-                            source: 'TriviaAPI',
-                            subject: subject,
-                            difficulty: item.difficulty || 'medium'
+                            const question = {
+                                question: item.question,
+                                options: shuffledOptions,
+                                answer: shuffledOptions.indexOf(item.correctAnswer),
+                                source: 'TriviaAPI',
+                                subject: subject,
+                                difficulty: item.difficulty || 'medium'
+                            }
+
+                            questions.push(question)
                         }
-
-                        questions.push(question)
                     }
                 }
             }
